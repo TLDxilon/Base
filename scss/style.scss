@@ -2,9 +2,9 @@
 @import "../bootstrap/scss/bootstrap.scss";
 @import "../bootstrap/scss/bootstrap-grid.scss";
 
-
+@import "_base/_base.scss";
 @import "_variables/_colors";
 @import "_mixins/_column";
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
-
+@import "_helpers/_column.scss";

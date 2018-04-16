@@ -1,23 +1,9 @@
 
-<header class="padding-v-l">
-    <div class="container">
-        <div class="row">
-            <div class="col align-self-center  justify-content-center">
-                <h1>Esto es un h1 y pertenezco al header</h1>
-                <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <button type="button" class="btn btn-primary">Flat</button>
-                <button type="button" class="btn btn-outline-primary">Outline</button>
-            </div>
-       </div>
-    </div>
-</header>
-<div class="bg-light padding-v-l block-coment">
-    <div class="container">
-        <code>
-            Clases: text-center, text-left, text-right
-        </code>
-    </div>
-</div>
+{% include _blocks/_header.html %}
+{% include _blocks/_coment.html coment="Clases: text-center, text-left, text-right" %}
+
+
+
 <main>
 
     <section class="padding-v-l">
@@ -30,7 +16,30 @@
             <div class="row">
                 <div class="col align-self-center">
                     <h3>Esto es un h3 y son un título</h3>
-                    <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia <a class="btn-link" >consequuntur magni </a>dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    <div class="">
+                        <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia <a class="btn-link" >consequuntur magni </a>dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                        <p><b>Eluptatem quia voluptas</b> sit aspernatur aut odit aut fugit, sed quia <a class="btn-link" >consequuntur magni </a>dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Esto es un <b>blockquote </b> lor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        </blockquote>
+                        <ul class="list-unstyled">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit
+                                <ul>
+                                    <li>Phasellus iaculis neque</li>
+                                    <li>Purus sodales ultricies</li>
+                                    <li>Vestibulum laoreet porttitor sem</li>
+                                    <li>Ac tristique libero volutpat at</li>
+                                </ul>
+                            </li>
+                            <li>Faucibus porta lacus fringilla vel</li>
+                            <li>Aenean sit amet erat nunc</li>
+                            <li>Eget porttitor lorem</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -38,13 +47,8 @@
         </div>
     </section>
 
-<div class="bg-light padding-v-l block-coment">
-    <div class="container">
-        <code>
-            Clases: column-count-2, column-count-3, padding-h-xl, text-center, text-left, text-right
-        </code>
-    </div>
-</div>
+
+    {% include _blocks/_coment.html coment="Clases: column-count-2, column-count-3, padding-h-xl, text-center, text-left, text-right" %}
 
 
     <section class="padding-v-l">
@@ -59,7 +63,7 @@
                     <img class="img-fluid" src="img/c1.png">
                 </div>
                 <div class="col-md-6  justify-content-center">
-                    <h3>Esto es un h3 y son un título</h3>
+                    <h3>Esto es un h3 y soy un título</h3>
                     <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
 
                 </div>
@@ -68,13 +72,8 @@
         </div>
     </section>
 
-    <div class="bg-light padding-v-l  block-coment">
-        <div class="container">
-            <code>
-                Clases: row-reverse, paddings...
-            </code>
-        </div>
-    </div>
+    {% include _blocks/_coment.html coment="Clases: row-reverse, paddings..." %}
+
 
     <section class="padding-v-l">
         <div class="container">
@@ -84,21 +83,15 @@
                 </div>
             </div>
             <div class="row align-items-top">
-                <div class="col-md-4">
-                    <h4>h4 título de elemento</h4>
-                    <img class="img-fluid" src="img/c1.png">
-                    <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magnionseq uuntur magni dolores eos.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>h4 título de elemento</h4>
-                    <img class="img-fluid" src="img/c1.png">
-                    <p>Eluptatem quia voluptas sit a coue porro quisquam olor sit amet, con seius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima </p>
-                </div>
-                <div class="col-md-4 ">
-                    <h4>h4 título de elemento</h4>
-                    <img class="img-fluid" src="img/c1.png">
-                    <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magn uptatem sequi nesciunt. Ut enim ad minima veniam, quis nost</p>
-                </div>
+                <section class="col-md-4">
+                    {% include _element/_title_img_text.html %}
+                </section>
+                <section class="col-md-4">
+                    {% include _element/_title_img_text.html %}
+                </section>
+                <section class="col-md-4 ">
+                    {% include _element/_title_img_text.html %}
+                </section>
 
 
 
@@ -107,5 +100,81 @@
         </div>
     </section>
 
+    {% include _blocks/_coment.html coment="" %}
+
+
+
+    <section class="padding-v-l">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col align-self-center  justify-content-center">
+                    <h2>h2. Lista de elementos</h2>
+                </div>
+            </div>
+            <ul class="row align-items-top">
+                {% include  _element/_li_title_text.html  title="Grilled Calmari" text="Consectetur dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.." %}
+                {% include  _element/_li_title_text.html  title="Beef Burger" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}
+                {% include  _element/_li_title_text.html  title="Cornouailles" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}
+                {% include  _element/_li_title_text.html  title="Grilled Calmari" text="Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis." %}
+
+
+
+            </ul>
+
+
+
+            </ul>
+
+        </div>
+    </section>
+
+    {% include _blocks/_coment.html coment="" %}
+
+
+    <section class="padding-v-xl">
+        <div class="container">
+            <div class="row align-items-top">
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html icon="camera" %}
+                </div>
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html icon="heart"  %}
+                </div>
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html  icon="monitor" %}
+                </div>
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html icon="music" %}
+                </div>
+
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html icon="location"  %}
+                </div>
+                <div class="col-md-4">
+                    {% include  _element/_icon_title_text.html  icon="star" %}
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    {% include _blocks/_coment.html coment="" %}
+
+    <section class="padding-v-xl">
+        <div class="container">
+            <div class="row align-items-top">
+                <div class="col-md-12">
+                    {% include  _element/_form.html icon="camera" %}
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
 </main>
 
