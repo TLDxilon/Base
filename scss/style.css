@@ -5940,67 +5940,67 @@ html {
   padding: 0px; }
 
 .padding-xs {
-  padding: 5px; }
-
-.padding-s {
   padding: 10px; }
 
-.padding-m {
-  padding: 15px; }
-
-.padding-l {
+.padding-s {
   padding: 20px; }
 
+.padding-m {
+  padding: 30px; }
+
+.padding-l {
+  padding: 40px; }
+
 .padding-xl {
-  padding: 25px; }
+  padding: 50px; }
 
 .padding-v-xxs {
   padding-top: 0px;
   padding-bottom: 0px; }
 
 .padding-v-xs {
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-.padding-v-s {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.padding-v-m {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
-.padding-v-l {
+.padding-v-s {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.padding-v-m {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.padding-v-l {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
 .padding-v-xl {
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .padding-h-xxs {
   padding-left: 0px;
   padding-right: 0px; }
 
 .padding-h-xs {
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.padding-h-s {
   padding-left: 10px;
   padding-right: 10px; }
 
-.padding-h-m {
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.padding-h-l {
+.padding-h-s {
   padding-left: 20px;
   padding-right: 20px; }
 
+.padding-h-m {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.padding-h-l {
+  padding-left: 40px;
+  padding-right: 40px; }
+
 .padding-h-xl {
-  padding-left: 25px;
-  padding-right: 25px; }
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .bg-white {
   background-color: #FFFFFF; }

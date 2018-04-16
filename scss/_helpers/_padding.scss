@@ -3,11 +3,11 @@
 
 $paddings: (
         'xxs': 0px,
-        'xs': 5px,
-        's': 10px,
-        'm': 15px,
-        'l': 20px,
-        'xl': 25px,
+        'xs': 10px,
+        's': 20px,
+        'm': 30px,
+        'l': 40px,
+        'xl': 50px,
 );
 
 @each $section, $padding in $paddings {
