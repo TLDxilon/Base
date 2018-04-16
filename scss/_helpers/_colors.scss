@@ -1,0 +1,18 @@
+.bg{
+  &-white{
+    background-color: $tone-white;
+  }
+  &-light{
+    background-color: $tone-light;
+  }
+  &-gray{
+    background-color: $tone-gray;
+  }
+  &-dark{
+    background-color: $tone-dark;
+  }
+  &-black{
+    background-color: $tone-black;
+
+  }
+}
