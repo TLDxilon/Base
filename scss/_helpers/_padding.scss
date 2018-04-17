@@ -2,12 +2,13 @@
 
 
 $paddings: (
-        'xxs': 0px,
-        'xs': 10px,
-        's': 20px,
-        'm': 30px,
-        'l': 40px,
-        'xl': 50px,
+        'xxs': 0em,
+        'xs': 1em,
+        's': 2em,
+        'm': 3em,
+        'l': 4em,
+        'xl': 5em,
+        'xxl': 10em,
 );
 
 @each $section, $padding in $paddings {
@@ -32,5 +33,10 @@ $paddings: (
     padding-left: $padding;
     padding-right: $padding;
 
+
   }
+
 }
+
+
+

@@ -1,0 +1,39 @@
+.picture-fit{
+  &--fill {
+    position: absolute;
+    img{
+      object-fit: fill;
+    }
+  }
+  &--contain {
+    position: absolute;
+    img{
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  &--cover {
+    position: absolute;
+    img{
+      object-fit: cover;
+      height: 100%;
+    }
+
+  }
+  &--scale-down {
+    position: absolute;
+    img{
+      object-fit: scale-down;
+    }
+
+  }
+  &--none {
+    position: absolute;
+    img{
+      object-fit: none;
+    }
+
+  }
+
+
+}

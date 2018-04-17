@@ -5,40 +5,40 @@
 
 <main>
 
-    <section class="padding-v-l  border-bottom">
+    <!--<section class="padding-v-l  border-bottom">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col align-self-center">-->
+                    <!--{% include _components/_h2.html title="Esto es  un título de bloque" %}-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col align-self-center">-->
+                    <!--{% include _components/_h3.html title="Esto es un título" %}-->
+                    <!--<div class="copy">-->
+                        <!--{% include _components/_copy_big.html %}-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</section>-->
+
+    <section class="border-bottom bg-light padding-v-m">
         <div class="container">
-            <div class="row">
-                <div class="col align-self-center">
-                    <h2>Esto es un h2 y soy un título de bloque</h2>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 justify-content-center align-items-stretch">
+                    {% include _components/_img.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--4-3"   %}
+
+
                 </div>
-            </div>
-            <div class="row">
-                <div class="col align-self-center">
-                    <h3>Esto es un h3 y son un título</h3>
-                    <div class="">
-                        <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia <a class="btn-link" >consequuntur magni </a>dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-                        <p><b>Eluptatem quia voluptas</b> sit aspernatur aut odit aut fugit, sed quia <a class="btn-link" >consequuntur magni </a>dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-                        <blockquote class="blockquote">
-                            <p class="mb-0">Esto es un <b>blockquote </b> lor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        </blockquote>
-                        <ul class="list-unstyled">
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Consectetur adipiscing elit</li>
-                            <li>Integer molestie lorem at massa</li>
-                            <li>Facilisis in pretium nisl aliquet</li>
-                            <li>Nulla volutpat aliquam velit
-                                <ul>
-                                    <li>Phasellus iaculis neque</li>
-                                    <li>Purus sodales ultricies</li>
-                                    <li>Vestibulum laoreet porttitor sem</li>
-                                    <li>Ac tristique libero volutpat at</li>
-                                </ul>
-                            </li>
-                            <li>Faucibus porta lacus fringilla vel</li>
-                            <li>Aenean sit amet erat nunc</li>
-                            <li>Eget porttitor lorem</li>
-                        </ul>
-                    </div>
+                <div class="col-md-6  justify-content-center align-items-stretch ">
+
+                        {% include _components/_h3.html title="Esto es un título" %}
+                        {% include _components/_copy.html %}
+
 
                 </div>
             </div>
@@ -47,45 +47,41 @@
     </section>
 
 
-
-    <section class="padding-v-l  border-bottom bg-light">
+    <section class="border-bottom bg-light">
         <div class="container">
+
             <div class="row align-items-center">
-                <div class="col align-self-center  justify-content-center">
-                    <h2>Esto es un h2 y soy un título de bloque</h2>
+                <div class="col-md-6 justify-content-center align-items-stretch padding-v-xxl">
+                    {% include _components/_img.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--4-3"   %}
+
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6 justify-content-center">
-                    <img class="img-fluid" src="img/c1.png">
-                </div>
-                <div class="col-md-6  justify-content-center">
-                    <h3>Esto es un h3 y soy un título</h3>
-                    <p>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                <div class="col-md-6 justify-content-center align-items-stretch">
+
+                    {% include _components/_h3.html title="Esto es un título" %}
+                    {% include _components/_copy.html %}
 
                 </div>
             </div>
 
         </div>
     </section>
-
 
     <section class="padding-v-l border-bottom ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col align-self-center  justify-content-center">
-                    <h2>Esto es un h2 y soy un título de bloque</h2>
+                    {% include _components/_h2.html title="Esto es  un título de bloque" %}
                 </div>
             </div>
             <div class="row align-items-top">
                 <section class="col-md-4">
-                    {% include _element/_title_img_text_btn.html %}
+                    {% include _element/_card.html %}
                 </section>
                 <section class="col-md-4">
-                    {% include _element/_title_img_text_btn.html %}
+                    {% include _element/_card.html %}
                 </section>
                 <section class="col-md-4 ">
-                    {% include _element/_title_img_text_btn.html %}
+                    {% include _element/_card.html %}
                 </section>
 
 
@@ -97,55 +93,50 @@
 
 
 
-
-
-    <section class="padding-v-l  border-bottom bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col align-self-center  justify-content-center">
-                    <h2>h2. Lista de elementos</h2>
-                </div>
-            </div>
-            <ul class="row align-items-top">
-                {% include  _element/_li_title_text.html  title="Grilled Calmari" text="Consectetur dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.." %}
-                {% include  _element/_li_title_text.html  title="Beef Burger" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}
-                {% include  _element/_li_title_text.html  title="Cornouailles" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}
-                {% include  _element/_li_title_text.html  title="Grilled Calmari" text="Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis." %}
-
-
-
-            </ul>
+    <!--<section class="padding-v-l  border-bottom bg-light">-->
+        <!--<div class="container">-->
+            <!--<div class="row align-items-center">-->
+                <!--<div class="col align-self-center  justify-content-center">-->
+                    <!--<h2>h2. Lista de elementos</h2>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<ul class="row align-items-top">-->
+                <!--{% include  _element/_li_title_text.html  title="Grilled Calmari" text="Consectetur dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.." %}-->
+                <!--{% include  _element/_li_title_text.html  title="Beef Burger" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}-->
+                <!--{% include  _element/_li_title_text.html  title="Cornouailles" text="Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." %}-->
+                <!--{% include  _element/_li_title_text.html  title="Grilled Calmari" text="Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis." %}-->
 
 
 
-            </ul>
-
-        </div>
-    </section>
+            <!--</ul>-->
 
 
 
-    <section class="padding-v-xl  border-bottom">
+            <!--</ul>-->
+
+        <!--</div>-->
+    <!--</section>-->
+
+    <section class="padding-v-xl border-bottom block-element-icon">
         <div class="container">
             <div class="row align-items-top">
                 <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html icon="camera-retro" title="A tu alcance" %}
+                    {% include  _element/_icon_box.html img-type="icon" icon="camera-retro" title="A tu alcance" %}
                 </div>
                 <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html icon="heart" title="Sin límintes" %}
+                    {% include  _element/_icon_box.html img-type="icon" icon="heart" title="Sin límites" %}
                 </div>
                 <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html  icon="desktop" title="A tu medida" %}
+                    {% include  _element/_icon_box.html img-type="icon"  icon="desktop" title="A tu medida" %}
                 </div>
                 <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html icon="music" title="Siempre online" %}
-                </div>
-
-                <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html icon="paint-brush"  title="Mejor servicio" %}
+                    {% include  _element/_icon_box.html img-type="icon"  icon="music" title="Siempre online" %}
                 </div>
                 <div class="col-md-4">
-                    {% include  _element/_icon_title_text.html  icon="star" title="Mayor atención" %}
+                    {% include  _element/_icon_box.html img-type="icon" icon="paint-brush"  title="Mejor servicio" %}
+                </div>
+                <div class="col-md-4">
+                    {% include  _element/_icon_box.html img-type="icon"  icon="star" title="Mayor atención" %}
                 </div>
 
             </div>
@@ -155,20 +146,19 @@
     </section>
 
 
-    
-
-    <section class="padding-v-xl  border-bottom bg-light">
-        <div class="container">
-            <div class="row align-items-top">
-                <div class="col-md-12">
-                    {% include  _element/_form.html icon="camera" %}
-                </div>
+    <!--<section class="padding-v-xl  border-bottom bg-light">-->
+        <!--<div class="container">-->
+            <!--<div class="row align-items-top">-->
+                <!--<div class="col-md-12">-->
+                    <!--{% include  _element/_form.html icon="camera" %}-->
+                <!--</div>-->
 
 
-            </div>
+            <!--</div>-->
 
 
-        </div>
-    </section>
+        <!--</div>-->
+    <!--</section>-->
+
 </main>
 

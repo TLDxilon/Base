@@ -5,6 +5,12 @@
 @import "_base/_base.scss";
 @import "_variables/_colors";
 @import "_mixins/_column";
+@import "_components/_img.scss";
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
 @import "_helpers/_column.scss";
+@import "_helpers/_img-ratio.scss";
+@import "_helpers/picture-fit";
+@import "_helpers/_position.scss";
+
+
