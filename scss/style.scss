@@ -1,16 +1,18 @@
 @import "../bootstrap/scss/bootstrap-reboot.scss";
-@import "../bootstrap/scss/bootstrap.scss";
 @import "../bootstrap/scss/bootstrap-grid.scss";
+@import "../bootstrap/scss/bootstrap.scss";
 
 @import "_base/_base.scss";
 @import "_variables/_colors";
 @import "_mixins/_column";
 @import "_components/_img.scss";
+@import "_components/_mapa.scss";
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
 @import "_helpers/_column.scss";
 @import "_helpers/_img-ratio.scss";
 @import "_helpers/picture-fit";
 @import "_helpers/_position.scss";
+@import "_basic-grid/_grid.scss";
 
 

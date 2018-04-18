@@ -1,0 +1,42 @@
+.section {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 40px 0;
+}
+
+.content{
+  background: #F4F2F0;
+  @extend .padding-xs;
+  border: 2px solid #e2e2e2;
+
+
+}
+
+.section-align{
+  .example{
+    min-height:15rem;
+
+  }
+}
+[class^=col] {
+  padding-bottom: 24px;
+  .no-gutters &{
+    padding-bottom: 0;
+  }
+}
+
+.grid-examples{
+  .container{
+    max-width: 960px;
+  }
+}
+pre{
+  @extend .bg-light;
+  padding: 1em;
+}
+
+.media{
+  img{
+    width: 64px;
+    height: 64px;
+  }
+}
