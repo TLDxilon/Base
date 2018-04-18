@@ -17,12 +17,15 @@
 
   }
 }
-[class^=col] {
-  padding-bottom: 24px;
-  .no-gutters &{
-    padding-bottom: 0;
+.grid-examples{
+  [class^=col] {
+    padding-bottom: 24px;
+    .no-gutters &{
+      padding-bottom: 0;
+    }
   }
 }
+
 
 .grid-examples{
   .container{
