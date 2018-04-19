@@ -4320,8 +4320,8 @@ position-relative {
 
 .grid-examples [class^=col] {
   padding-bottom: 24px; }
-  .no-gutters .grid-examples [class^=col] {
-    padding-bottom: 0; }
+.grid-examples .no-gutters [class^=col] {
+  padding-bottom: 0; }
 
 .grid-examples .container {
   max-width: 960px; }
