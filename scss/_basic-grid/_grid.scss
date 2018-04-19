@@ -1,10 +1,10 @@
 .section {
   border-bottom: 1px solid #e2e2e2;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .content{
-  background: #F4F2F0;
+  background: #F5F5F5;
   @extend .padding-xs;
   border: 2px solid #e2e2e2;
 
@@ -44,3 +44,11 @@ pre{
   max-width: 64px;
 }
 
+.side-bar{
+  @extend .bg-light;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+  height: calc(100vh);
+
+}

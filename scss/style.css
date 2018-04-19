@@ -2632,12 +2632,14 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light, pre {
+.bg-light, pre, .side-bar {
   background-color: #f8f9fa !important; }
 
-a.bg-light:hover, a.bg-light:focus,
+a.bg-light:hover, a.side-bar:hover, a.bg-light:focus, a.side-bar:focus,
 button.bg-light:hover,
-button.bg-light:focus {
+button.side-bar:hover,
+button.bg-light:focus,
+button.side-bar:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
@@ -4942,8 +4944,8 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-figure {
-  margin-bottom: 0; }
+.btn, .form, .form-inline, .form-check {
+  margin-bottom: 1em; }
 
 .picture-fit {
   position: relative;
@@ -5056,7 +5058,7 @@ figure {
 
 .bg-white {
   background-color: #FFFFFF; }
-.bg-light, pre {
+.bg-light, pre, .side-bar {
   background-color: #D8D8D8; }
 .bg-gray {
   background-color: #B0B0B0; }
@@ -5121,10 +5123,10 @@ position-relative {
 
 .section {
   border-bottom: 1px solid #e2e2e2;
-  padding: 40px 0; }
+  padding: 20px 0; }
 
 .content {
-  background: #F4F2F0;
+  background: #F5F5F5;
   border: 2px solid #e2e2e2; }
 
 .section-align .example {
@@ -5143,5 +5145,11 @@ pre {
 
 .media-img {
   max-width: 64px; }
+
+.side-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: calc(100vh); }
 
 /*# sourceMappingURL=style.css.map */
