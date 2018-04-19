@@ -5146,9 +5146,6 @@ position-relative {
 .grid-examples .no-gutters [class^=col] {
   padding-bottom: 0; }
 
-.grid-examples .container {
-  max-width: 960px; }
-
 pre {
   padding: 1em; }
 
