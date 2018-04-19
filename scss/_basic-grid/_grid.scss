@@ -38,8 +38,12 @@ pre{
 }
 
 .media{
-  img{
-    width: 64px;
-    height: 64px;
+  .media-img{
+    max-width: 64px;
   }
+  img{
+    max-width: 64px;
+
+  }
+
 }
