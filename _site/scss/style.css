@@ -4318,9 +4318,9 @@ position-relative {
 .section-align .example {
   min-height: 15rem; }
 
-[class^=col] {
+.grid-examples [class^=col] {
   padding-bottom: 24px; }
-  .no-gutters [class^=col] {
+  .no-gutters .grid-examples [class^=col] {
     padding-bottom: 0; }
 
 .grid-examples .container {
