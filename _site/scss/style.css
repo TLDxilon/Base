@@ -5158,4 +5158,11 @@ pre {
   z-index: 1000;
   height: calc(100vh); }
 
+.overlay {
+  position: relative; }
+
+.overlay-body {
+  position: absolute;
+  top: 0; }
+
 /*# sourceMappingURL=style.css.map */
