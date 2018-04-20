@@ -5202,6 +5202,11 @@ position-relative {
   padding-top: 30em;
   padding-bottom: 30em; }
 
+.content-entry {
+  margin: 0 5%; }
+  .container-fluid .content-entry {
+    margin: 0 10% 0 5%; }
+
 .section {
   border-bottom: 1px solid #e2e2e2;
   padding: 20px 0; }
@@ -5233,12 +5238,17 @@ pre {
 .textgroup img {
   width: 200px; }
 
-section {
+.block {
   margin: 30px;
   -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
   transform: scale3d(0.9, 0.9, 0.9); }
+
+.element {
+  -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35); }
 
 .overlay-element {
   position: relative;
