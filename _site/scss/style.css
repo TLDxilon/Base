@@ -5038,7 +5038,7 @@ body {
 .padding-xs, .content {
   padding: 1em; }
 
-.padding-s, .picture-fit.ratio-frame, .map-content.ratio-frame, .video-content.ratio-frame, .overlay-content {
+.padding-s, .overlay-content {
   padding: 2em; }
 
 .padding-m {
@@ -5204,6 +5204,13 @@ pre {
 
 .textgroup img {
   width: 200px; }
+
+section {
+  margin: 30px;
+  -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
+  transform: scale3d(0.9, 0.9, 0.9); }
 
 .overlay-element {
   position: relative;
