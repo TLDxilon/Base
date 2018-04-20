@@ -2,10 +2,16 @@
   figure{
     display: inline-block;
   }
+
 }
 
 
 .figure-caption-absolute {
   position: absolute;
   bottom: 0;
+}
+
+
+figure:last-child{
+   margin-bottom: 0;
 }

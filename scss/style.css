@@ -5031,6 +5031,9 @@ body {
   position: absolute;
   bottom: 0; }
 
+figure:last-child {
+  margin-bottom: 0; }
+
 /*CLASES PADDINGS*/
 .padding-xxs {
   padding: 0em; }
@@ -5173,6 +5176,31 @@ position-absolute {
   position: absolute; }
 position-relative {
   position: relative; }
+
+/*ALTURAS DE BLOQUE*/
+.height-block-xs {
+  padding-top: 0em;
+  padding-bottom: 0em; }
+
+.height-block-s {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
+
+.height-block-m {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.height-block-l {
+  padding-top: 10em;
+  padding-bottom: 10em; }
+
+.height-block-xl {
+  padding-top: 20em;
+  padding-bottom: 20em; }
+
+.height-block-xxl {
+  padding-top: 30em;
+  padding-bottom: 30em; }
 
 .section {
   border-bottom: 1px solid #e2e2e2;

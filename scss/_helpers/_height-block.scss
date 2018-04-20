@@ -1,0 +1,21 @@
+/*ALTURAS DE BLOQUE*/
+
+
+$paddings: (
+        'xs': 0em,
+        's': 2.5em,
+        'm': 5em,
+        'l': 10em,
+        'xl': 20em,
+        'xxl': 30em,
+);
+
+
+
+@each $section, $padding in $paddings {
+  .height-block-#{$section} {
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+  }
+}
