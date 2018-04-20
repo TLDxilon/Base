@@ -1,4 +1,9 @@
-<figure class="figure">
-    <img src="img/img.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+<figure>
+    <div class=" {{ include.ratio }}">
+        <div class="picture-fit picture-fit--{{ include.picture-fit }} {{ include.frame }}">
+            <img class="img-fluid " src="{{ include.img }}">
+            <figcaption class="figure-caption {{ include.figure-caption-absolute }}">A caption for the above image.</figcaption>
+        </div>
+
+    </div>
 </figure>

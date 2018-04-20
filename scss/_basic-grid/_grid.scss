@@ -17,7 +17,7 @@
 
   }
 }
-.grid-examples{
+.col-padding-bottom{
   [class^=col] {
     padding-bottom: 24px;
 
@@ -31,7 +31,6 @@
 
 
 pre{
-  @extend .bg-light;
   padding: 1em;
 }
 
@@ -46,4 +45,10 @@ pre{
   z-index: 1000;
   height: calc(100vh);
 
+}
+
+.textgroup{
+  img{
+    width:200px;
+  }
 }

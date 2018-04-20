@@ -23,4 +23,7 @@
     min-height: 100%;
     border: 0;
   }
+  &.ratio-frame{
+    @extend .padding-s;
+  }
 }

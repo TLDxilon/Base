@@ -2632,7 +2632,7 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light, pre, .side-bar {
+.bg-light, .side-bar {
   background-color: #f8f9fa !important; }
 
 a.bg-light:hover, a.side-bar:hover, a.bg-light:focus, a.side-bar:focus,
@@ -4974,6 +4974,63 @@ body {
     .picture-fit--cover img {
       height: 100%; }
 
+.map {
+  line-height: 0;
+  border: 0;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+  margin: 0; }
+
+.map-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .map-content iframe {
+    background: white;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100%;
+    min-height: 100%;
+    border: 0; }
+
+.video {
+  line-height: 0;
+  border: 0;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+  margin: 0; }
+
+.video-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .video-content iframe {
+    background: white;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100%;
+    min-height: 100%;
+    border: 0; }
+
+.figure-group figure {
+  display: inline-block; }
+
+.figure-caption-absolute {
+  position: absolute;
+  bottom: 0; }
+
 /*CLASES PADDINGS*/
 .padding-xxs {
   padding: 0em; }
@@ -4981,7 +5038,7 @@ body {
 .padding-xs, .content {
   padding: 1em; }
 
-.padding-s, .overlay-content {
+.padding-s, .picture-fit.ratio-frame, .map-content.ratio-frame, .video-content.ratio-frame, .overlay-content {
   padding: 2em; }
 
 .padding-m {
@@ -5054,7 +5111,7 @@ body {
 
 .bg-white {
   background-color: #FFFFFF; }
-.bg-light, pre, .side-bar {
+.bg-light, .side-bar {
   background-color: #D8D8D8; }
 .bg-gray {
   background-color: #B0B0B0; }
@@ -5128,9 +5185,9 @@ position-relative {
 .section-align .example {
   min-height: 15rem; }
 
-.grid-examples [class^=col] {
+.col-padding-bottom [class^=col] {
   padding-bottom: 24px; }
-.grid-examples .no-gutters [class^=col] {
+.col-padding-bottom .no-gutters [class^=col] {
   padding-bottom: 0; }
 
 pre {
@@ -5144,6 +5201,9 @@ pre {
   top: 0;
   z-index: 1000;
   height: calc(100vh); }
+
+.textgroup img {
+  width: 200px; }
 
 .overlay-element {
   position: relative;
@@ -5169,30 +5229,5 @@ pre {
   opacity: 0; }
   .overlay-body:hover {
     opacity: 1; }
-
-.map {
-  line-height: 0;
-  border: 0;
-  width: 100%;
-  min-height: 200px;
-  height: 100%;
-  margin: 0; }
-
-.map-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-  .map-content iframe {
-    background: white;
-    width: 100% !important;
-    height: 100% !important;
-    min-width: 100%;
-    min-height: 100%;
-    border: 0; }
 
 /*# sourceMappingURL=style.css.map */

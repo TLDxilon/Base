@@ -6,6 +6,9 @@
 @import "_variables/_colors";
 @import "_mixins/_mixins";
 @import "_components/_img.scss";
+@import "_components/_map.scss";
+@import "_components/_video.scss";
+@import "_components/_figure.scss";
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
 @import "_helpers/_column.scss";
@@ -14,6 +17,6 @@
 @import "_helpers/_position.scss";
 @import "_basic-grid/_grid.scss";
 @import "_elements/_overlay.scss";
-@import "_elements/_map.scss";
+
 
 

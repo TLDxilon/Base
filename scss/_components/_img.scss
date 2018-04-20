@@ -16,4 +16,9 @@
       height: 100%;
     }
   }
+  &.ratio-frame{
+    @extend .padding-s;
+  }
 }
+
+
