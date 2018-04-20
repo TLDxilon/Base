@@ -2,10 +2,12 @@
   position:relative;
   overflow: hidden;
   width: 100%;
+  height: auto;
 
 }
 
 .overlay-body{
+
   display: block;
   top: 50%;
   left: 50%;
@@ -13,15 +15,14 @@
   @include transition(opacity .3s );
   position: absolute;
   width: 100%;
+  height:100%;
   z-index: 1;
   opacity: 0;
-
   &:hover{
     opacity: 1;
   }
 
 }
 .overlay-content{
-   @extend .padding-s;
 
 }

@@ -5038,7 +5038,7 @@ body {
 .padding-xs, .content {
   padding: 1em; }
 
-.padding-s, .overlay-content {
+.padding-s {
   padding: 2em; }
 
 .padding-m {
@@ -5215,7 +5215,8 @@ section {
 .overlay-element {
   position: relative;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .overlay-body {
   display: block;
@@ -5232,6 +5233,7 @@ section {
   transition: opacity 0.3s;
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: 1;
   opacity: 0; }
   .overlay-body:hover {
