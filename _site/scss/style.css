@@ -5203,9 +5203,7 @@ position-relative {
   padding-bottom: 30em; }
 
 .content-entry {
-  margin: 0 5%; }
-  .container-fluid .content-entry {
-    margin: 0 10% 0 5%; }
+  padding: 1em; }
 
 .section {
   border-bottom: 1px solid #e2e2e2;
@@ -5240,15 +5238,14 @@ pre {
 
 .block {
   margin: 30px;
-  -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-  transform: scale3d(0.9, 0.9, 0.9); }
+  -webkit-box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2); }
 
 .element {
-  -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35); }
+  -webkit-box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2); }
 
 .overlay-element {
   position: relative;
@@ -5272,8 +5269,14 @@ pre {
   position: absolute;
   width: 100%;
   z-index: 1;
-  opacity: 0; }
-  .overlay-body:hover {
-    opacity: 1; }
+  opacity: 0;
+  height: 100%; }
+
+.overlay-link:hover .overlay-body {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.5); }
+
+.overlay-content {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
