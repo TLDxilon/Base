@@ -1,3 +1,12 @@
+.ds-figure{
+  @media #{$desktop}{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 .figure-group{
   figure{
     display: inline-block;
@@ -11,7 +20,3 @@
   bottom: 0;
 }
 
-
-figure:last-child{
-   margin-bottom: 0;
-}

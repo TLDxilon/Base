@@ -1,4 +1,9 @@
 .picture-fit{
+  img{
+    margin: 0 auto;
+    width:100%;
+    height: auto;
+  }
   &--fill {
     position: absolute;
     img{

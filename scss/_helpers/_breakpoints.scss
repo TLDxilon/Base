@@ -1,0 +1,25 @@
+@media #{$desktop}{
+  .hidden-desktop {
+    display: none !important;
+  }
+  .visible-desktop {
+    display: block !important;
+  }
+}
+
+@media #{$mobile}{
+  .hidden-mobile {
+    display: none!important;
+  }
+  .visible-mobile {
+    display: block!important;
+  }
+}
+@media #{$tablets}{
+  .hidden-tablets {
+    display: none!important;
+  }
+  .visible-tablets {
+    display: block!important;
+  }
+}

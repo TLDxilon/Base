@@ -11,11 +11,12 @@ $paddings: (
 );
 
 
+@media #{$desktop}{
+  @each $section, $padding in $paddings {
+    .height-block-#{$section} {
+      padding-top: $padding;
+      padding-bottom: $padding;
 
-@each $section, $padding in $paddings {
-  .height-block-#{$section} {
-    padding-top: $padding;
-    padding-bottom: $padding;
-
+    }
   }
 }

@@ -53,7 +53,7 @@ pre{
   }
 }
 .block{
-  margin: 30px;
+  margin: 30px 0 30px 0;
   @include box-shadow(0px, 0, 16px, rgba(0,0,0,0.2));
  // transform: scale3d(.9,.9,.9);
 }

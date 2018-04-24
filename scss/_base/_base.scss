@@ -12,3 +12,33 @@ body{
   margin-bottom: 1em;
 }
 
+.col-padding-bottom{
+  [class^=col] {
+    padding-bottom: 1.5rem;
+
+  }
+  .no-gutters {
+    [class^=col] {
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+[class^=col] {
+   margin-bottom: 1.5rem;
+  @media #{$desktop}{
+    margin-bottom: 0;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.block{
+  position:relative;
+  padding: 1rem 0;
+  &.block-cover{
+    padding: 0;
+  }
+}

@@ -2,13 +2,18 @@
 @import "../bootstrap/scss/bootstrap-grid.scss";
 @import "../bootstrap/scss/bootstrap.scss";
 
-@import "_base/_base.scss";
+
 @import "_variables/_colors";
+@import "_variables/_breakpoints";
+
+@import "_base/_base.scss";
 @import "_mixins/_mixins";
+
 @import "_components/_img.scss";
 @import "_components/_map.scss";
 @import "_components/_video.scss";
 @import "_components/_figure.scss";
+
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
 @import "_helpers/_column.scss";
@@ -17,7 +22,10 @@
 @import "_helpers/_position.scss";
 @import "_helpers/_height-block.scss";
 @import "_helpers/_entry.scss";
+@import "_helpers/_breakpoints.scss";
+
 @import "_guide/_grid.scss";
+
 @import "_elements/_overlay.scss";
 @import "_elements/_target.scss";
 @import "_elements/_media.scss";

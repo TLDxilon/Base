@@ -14,10 +14,10 @@
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8  justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 offset-lg-1 col-lg-7  justify-content-center">
               <div class="content-entry">
 
-                {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales con content" %}
+                {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales" %}
                 {% include _components/_copy.html %}
               </div>
 
@@ -38,9 +38,9 @@
                 {% include _components/_copy.html %}
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8   justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-12  offset-lg-1 col-lg-7   justify-content-center">
                 <div class="content-entry">
-                {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales con content" %}
+                {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales" %}
                 {% include _components/_figure.html img="img/cover.jpg" picture-fit=""    %}
                     {% include _components/_copy.html %}
                     <form>
@@ -79,7 +79,7 @@
                 {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--square" figure-caption-absolute="figure-caption-absolute"   %}
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 justify-content-center ">
+            <div class="col-xs-12 col-sm-12 col-md-12  col-lg-8 justify-content-center ">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mostramos la imagen con altura 100% dependiendo del padding del col con cover" %}
                 {% include _components/_copy.html %}
@@ -104,7 +104,7 @@
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8   justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-12  offset-lg-1 col-lg-7   justify-content-center">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según ratio" %}
                 {% include _components/_copy.html %}
@@ -123,7 +123,7 @@
                 {% include _components/_mapa.html   ratio="img-ratio--4-3"    %}
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8  justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-12  col-lg-8  justify-content-center">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según altura de bloque" %}
                 {% include _components/_copy.html %}
@@ -135,47 +135,3 @@
     </div>
 </section>
 
-<!--Bloques de video-->
-
-<!--Bloques de mapa-->
-<section class="block height-block-s">
-    <div class="container">
-
-        <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4  justify-content-center">
-                <div class="content-entry">
-                {% include _components/_video.html  ratio="img-ratio--4-3"  frame="ratio-frame"  %}
-                </div>
-
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8   justify-content-center">
-                <div class="content-entry">
-                {% include _components/_h3.html title="Video según ratio" %}
-                {% include _components/_copy.html %}
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="block block-cover">
-    <div class="container-fluid">
-
-        <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4  justify-content-center height-block-l">
-
-                {% include _components/_video.html     %}
-
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8  justify-content-center">
-                <div class="content-entry">
-                {% include _components/_h3.html title="Video según altura de bloque" %}
-                {% include _components/_copy.html %}
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
