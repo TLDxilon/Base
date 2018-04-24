@@ -5298,5 +5298,8 @@ pre {
 
 .target-image {
   padding-bottom: 1rem; }
+  .target-image .rounded-circle {
+    height: 7rem;
+    width: 7rem; }
 
 /*# sourceMappingURL=style.css.map */
