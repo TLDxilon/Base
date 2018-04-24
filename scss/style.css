@@ -5191,11 +5191,9 @@ position-relative {
   @media only screen and (min-width: 960px) {
     .content-entry {
       padding: 1rem 5%; } }
-  .block-cover .content-entry {
-    padding-top: 2rem; }
-    @media only screen and (min-width: 960px) {
-      .block-cover .content-entry {
-        padding: 1rem 20%; } }
+  @media only screen and (min-width: 960px) {
+    .block-cover .content-entry {
+      padding: 1rem 20%; } }
   .block-iframe .content-entry {
     padding-top: 2rem; }
 
