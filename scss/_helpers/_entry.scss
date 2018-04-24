@@ -1,12 +1,19 @@
 .content-entry{
+   margin: 0 auto;
    position: relative;
-  .block-cover &{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    @media #{$desktop}{
-      max-width: 550px;
-      padding-left: 5rem;
+   padding: 1rem;
+  @media #{$desktop}{
+    padding: 1rem 5%;
+  }
+    .block-cover &{
+      padding-top: 2rem;
+      @media #{$desktop}{
+        padding: 1rem 20%;
+      }
+    }
+    .block-iframe &{
+      padding-top: 2rem;
 
     }
-  }
+
 }

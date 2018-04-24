@@ -4962,19 +4962,17 @@ body {
 .col-padding-bottom .no-gutters [class^=col] {
   padding-bottom: 0; }
 
-[class^=col] {
-  margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 960px) {
-    [class^=col] {
-      margin-bottom: 0; } }
-  [class^=col]:last-child {
-    margin-bottom: 0; }
-
 .block {
   position: relative;
   padding: 1rem 0; }
   .block.block-cover {
     padding: 0; }
+
+figure:last-child,
+p:last-child,
+button:last-child,
+.btn:last-child {
+  margin-bottom: 0; }
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
@@ -5006,10 +5004,6 @@ body {
     min-width: 100%;
     min-height: 100%;
     border: 0; }
-
-@media only screen and (min-width: 960px) {
-  .ds-figure:last-child {
-    margin-bottom: 0; } }
 
 .figure-group figure {
   display: inline-block; }
@@ -5191,14 +5185,19 @@ position-relative {
     padding-top: 30em;
     padding-bottom: 30em; } }
 .content-entry {
-  position: relative; }
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem; }
+  @media only screen and (min-width: 960px) {
+    .content-entry {
+      padding: 1rem 5%; } }
   .block-cover .content-entry {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-top: 2rem; }
     @media only screen and (min-width: 960px) {
       .block-cover .content-entry {
-        max-width: 550px;
-        padding-left: 5rem; } }
+        padding: 1rem 20%; } }
+  .block-iframe .content-entry {
+    padding-top: 2rem; }
 
 @media only screen and (min-width: 960px) {
   .hidden-desktop {
@@ -5260,6 +5259,11 @@ pre {
   -moz-box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0 16px rgba(0, 0, 0, 0.2); }
 
+.element {
+  margin-bottom: 1rem; }
+  .element .element {
+    margin-bottom: 0; }
+
 .overlay-element {
   position: relative;
   overflow: hidden;
@@ -5291,5 +5295,8 @@ pre {
 
 .overlay-content {
   height: 100%; }
+
+.target-image {
+  padding-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+.element{
+  margin-bottom: 1rem;
+  .element &{
+    margin-bottom: 0;
+  }
+
+}

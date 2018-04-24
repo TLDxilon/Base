@@ -4,7 +4,7 @@
     </div>
 
     <div class="picture-fit picture-fit--{{ include.picture-fit }} {{ include.frame }}">
-        <img class="img-fluid " src="{{ include.img }}">
+        {% include _components/_img.html  %}
         <figcaption class="figure-caption {{ include.figure-caption-absolute }}">A caption for the above image.</figcaption>
     </div>
 </figure>
