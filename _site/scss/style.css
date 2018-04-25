@@ -4996,6 +4996,11 @@ ul {
     width: 100%;
     height: auto; }
 
+.map {
+  position: relative; }
+  .block-cover .map {
+    position: initial; }
+
 .map-content {
   position: absolute;
   top: 0;

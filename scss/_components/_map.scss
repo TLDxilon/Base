@@ -1,5 +1,8 @@
 .map{
-
+  position:relative;
+  .block-cover &{
+    position: initial;
+  }
 }
 .map-content{
   position: absolute;
