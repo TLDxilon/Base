@@ -1,19 +1,19 @@
 <div  id="bloque6-6" class="row">
     <div class="col-md-12 ">
-        <pre>Con .justify-content-center/top o end alineamos verticalmente el texto e imagen</pre>
+        <pre>Con .align-items-start/center/end o end alineamos verticalmente el texto e imagen</pre>
     </div>
 </div>
 <!--Bloque con imagen y container-->
-<section class="block border-bottom height-block-s">
+<section class="block border-bottom block-height-s">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                 {% include _components/_figure.html img="img/cover.jpg" picture-fit=""    %}
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <div class="content-entry">
 
                 {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales" %}
@@ -26,16 +26,16 @@
     </div>
 </section>
 <!--Bloque con imagen y container reverso-->
-<section class="block border-bottom height-block-s">
-    <div class="container">
+<section class="block border-bottom block-height-s">
+    <div class="container-fluid">
         <div class="row align-items-center flex-row-reverse">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                     {% include _components/_figure.html img="img/cover.jpg" picture-fit=""    %}
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
 
                     {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales" %}
@@ -48,35 +48,32 @@
     </div>
 </section>
 <!--Bloque con imagen cover-->
-<section class="block block-cover">
-    <div class="" >
-
-        <div class="row no-gutters align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-stretch">
-                {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--square" figure-caption-absolute="figure-caption-absolute"   %}
-
+<section class="block block-cover block-height-l">
+    <div class="container-fluid" >
+        <div class="row align-items-center">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-stretch">
+                {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--16-9" figure-caption-absolute="figure-caption-absolute"   %}
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mostramos la imagen con altura 100% dependiendo del padding del col con cover" %}
                 {% include _components/_copy.html %}
                 </div>
-
             </div>
         </div>
-
     </div>
 </section>
-<!--Bloque con imagen cover reverso-->
-<section class="block block-cover">
-    <div class="" >
 
-        <div class="row no-gutters align-items-center  flex-row-reverse">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-stretch">
-                {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--square" figure-caption-absolute="figure-caption-absolute"   %}
+<!--Bloque con imagen cover reverso-->
+<section class="block block-cover  block-height-l">
+    <div class="container-fluid" >
+
+        <div class="row align-items-center  flex-row-reverse">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-stretch">
+                {% include _components/_figure.html img="https://www.renovablesverdes.com/wp-content/uploads/2011/01/eje-horizontal.jpg" picture-fit="cover" ratio="img-ratio--16-9" figure-caption-absolute="figure-caption-absolute"   %}
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
                     {% include _components/_h3.html title="Mostramos la imagen con altura 100% dependiendo del padding del col con cover" %}
                     {% include _components/_copy.html %}
@@ -95,19 +92,19 @@
 </div>
 <!--Bloques de mapa-->
 
-<section class="block block-iframe height-block-s">
+<section class="block block-iframe block-height-s">
 
 
     <div class="container">
 
         <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                 {% include _components/_mapa.html  ratio="img-ratio--4-3"  %}
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según ratio" %}
                 {% include _components/_copy.html %}
@@ -120,19 +117,19 @@
 </section>
 
 <!--Bloques de mapa reverso-->
-<section class="block block-iframe height-block-s">
+<section class="block block-iframe block-height-s">
 
 
     <div class="container">
 
         <div class="row align-items-center flex-row-reverse">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                     {% include _components/_mapa.html  ratio="img-ratio--4-3"  %}
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                     {% include _components/_h3.html title="Mapa según ratio" %}
                     {% include _components/_copy.html %}
@@ -149,11 +146,11 @@
     <div class="">
 
         <div class="row no-gutters align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  align-self-stretch">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6  align-self-stretch">
                 {% include _components/_mapa.html   ratio="img-ratio--4-3"    %}
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según altura de bloque" %}
                 {% include _components/_copy.html %}
@@ -170,11 +167,11 @@
     <div class="">
 
         <div class="row no-gutters align-items-center flex-row-reverse">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  align-self-stretch">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6  align-self-stretch">
                 {% include _components/_mapa.html   ratio="img-ratio--square"    %}
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
                     {% include _components/_h3.html title="Mapa según altura de bloque" %}
                     {% include _components/_copy.html %}
@@ -188,10 +185,10 @@
 
 
 <!--Bloque con texto y formulario-->
-<section class="block border-bottom height-block-l">
+<section class="block border-bottom block-height-l">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                 <div class="content-entry">
                     {% include _components/_h1.html title="Título para landing" %}
                     {% include _components/_lead.html title="Lorem ipsum dolor sit amet consectetuer elit." %}
@@ -199,7 +196,7 @@
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="second-col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="content-entry">
 
                     {% include _components/_h3.html title="Más información" %}

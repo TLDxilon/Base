@@ -3,13 +3,28 @@
    position: relative;
    padding: 1rem;
   @media #{$desktop}{
-    padding: 1rem 5%;
-  }
-    .block-cover &{
-      @media #{$desktop}{
-        padding: 1rem 20%;
+    padding-left: 5%;
+    padding-right: 15%;
+    .first-col &{
+      padding-left: 15%;
+      padding-right: 5%;
+    }
+    .first-col & {
+      .flex-row-reverse & {
+          padding-left: 5%;
+          padding-right: 15%;
+
       }
     }
+    .second-col & {
+      .flex-row-reverse & {
+        padding-left: 15%;
+        padding-right: 5%;
+
+      }
+    }
+  }
+
     .block-iframe &{
       padding-top: 2rem;
 

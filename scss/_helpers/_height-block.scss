@@ -13,10 +13,17 @@ $paddings: (
 
 @media #{$desktop}{
   @each $section, $padding in $paddings {
-    .height-block-#{$section} {
+    .block-height-#{$section} {
       padding-top: $padding;
       padding-bottom: $padding;
-
+       &.block-cover {
+         padding-top: 0;
+         padding-bottom: 0;
+         [class*="col-"]{
+           padding-top: $padding;
+           padding-bottom: $padding;
+         }
+       }
     }
   }
 }

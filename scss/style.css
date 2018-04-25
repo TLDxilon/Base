@@ -4980,7 +4980,7 @@ form:last-child,
 
 ul {
   list-style-type: none;
-  padding-left: 1rem; }
+  padding-left: 1.5rem; }
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
@@ -5169,39 +5169,82 @@ position-relative {
 
 /*ALTURAS DE BLOQUE*/
 @media only screen and (min-width: 960px) {
-  .height-block-xs {
+  .block-height-xs {
     padding-top: 0em;
     padding-bottom: 0em; }
+    .block-height-xs.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-xs.block-cover [class*="col-"] {
+        padding-top: 0em;
+        padding-bottom: 0em; }
 
-  .height-block-s {
+  .block-height-s {
     padding-top: 2.5em;
     padding-bottom: 2.5em; }
+    .block-height-s.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-s.block-cover [class*="col-"] {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em; }
 
-  .height-block-m {
+  .block-height-m {
     padding-top: 5em;
     padding-bottom: 5em; }
+    .block-height-m.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-m.block-cover [class*="col-"] {
+        padding-top: 5em;
+        padding-bottom: 5em; }
 
-  .height-block-l {
+  .block-height-l {
     padding-top: 10em;
     padding-bottom: 10em; }
+    .block-height-l.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-l.block-cover [class*="col-"] {
+        padding-top: 10em;
+        padding-bottom: 10em; }
 
-  .height-block-xl {
+  .block-height-xl {
     padding-top: 20em;
     padding-bottom: 20em; }
+    .block-height-xl.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-xl.block-cover [class*="col-"] {
+        padding-top: 20em;
+        padding-bottom: 20em; }
 
-  .height-block-xxl {
+  .block-height-xxl {
     padding-top: 30em;
-    padding-bottom: 30em; } }
+    padding-bottom: 30em; }
+    .block-height-xxl.block-cover {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .block-height-xxl.block-cover [class*="col-"] {
+        padding-top: 30em;
+        padding-bottom: 30em; } }
 .content-entry {
   margin: 0 auto;
   position: relative;
   padding: 1rem; }
   @media only screen and (min-width: 960px) {
     .content-entry {
-      padding: 1rem 5%; } }
-  @media only screen and (min-width: 960px) {
-    .block-cover .content-entry {
-      padding: 1rem 20%; } }
+      padding-left: 5%;
+      padding-right: 15%; }
+      .first-col .content-entry {
+        padding-left: 15%;
+        padding-right: 5%; }
+      .flex-row-reverse .first-col .content-entry {
+        padding-left: 5%;
+        padding-right: 15%; }
+      .flex-row-reverse .second-col .content-entry {
+        padding-left: 15%;
+        padding-right: 5%; } }
   .block-iframe .content-entry {
     padding-top: 2rem; }
 
