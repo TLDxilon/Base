@@ -4978,6 +4978,10 @@ form:last-child,
 .btn:last-child {
   margin-bottom: 0; }
 
+ul {
+  list-style-type: none;
+  padding-left: 1rem; }
+
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
 .picture-fit {
@@ -5321,5 +5325,8 @@ pre {
   .target-image .rounded-circle {
     height: 7rem;
     width: 7rem; }
+
+.list-menu {
+  padding-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
