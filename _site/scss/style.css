@@ -4968,9 +4968,13 @@ body {
   .block.block-cover {
     padding: 0; }
 
+form {
+  margin-bottom: 1rem; }
+
 figure:last-child,
 p:last-child,
 button:last-child,
+form:last-child,
 .btn:last-child {
   margin-bottom: 0; }
 
@@ -5269,7 +5273,7 @@ pre {
   border-bottom: 1px solid #EEE; }
   .nav-item a {
     color: #212529;
-    padding: 0.5rem 10rem 0.5rem 0.5rem; }
+    padding: 0 0 0 0.5rem; }
 
 .submenu {
   padding: 1rem 0;
