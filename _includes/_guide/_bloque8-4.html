@@ -1,4 +1,4 @@
-<div id="bloque1-3" class="row">
+<div id="bloque8-4" class="row">
     <div class="col-md-12 ">
         <pre>Con .justify-content-center/top o end alineamos verticalmente el texto e imagen.</pre>
         <pre>Para los bloques 1/3 se utilizarán col-4 y col-8</pre>
@@ -8,13 +8,13 @@
 <section  class="block border-bottom block-height-s">
     <div class="container">
         <div class="row align-items-center">
-            <div class="first-col col-xs-12 col-sm-12 col-md-5 col-lg-4 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
                 <div class="content-entry">
                 {% include _components/_figure.html img="img/cover.jpg" picture-fit=""    %}
                 </div>
 
             </div>
-            <div class="second-col col-xs-12 col-sm-12 col-md-7 col-lg-8 ">
+            <div class="second-col col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
               <div class="content-entry">
 
                 {% include _components/_h3.html title="Mostramos la imagen en sus proporciones reales" %}
@@ -32,15 +32,15 @@
 
 
 
-<section class="block block-cover ">
+<section class="block block-cover block-height-m">
     <div class="container-fluid">
 
         <div class="row align-items-center">
-            <div class="first-col col-xs-12 col-sm-12 col-md-5 col-lg-4  align-self-stretch">
-                {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--square" figure-caption-absolute="figure-caption-absolute"   %}
+            <div class="first-col col-xs-12 col-sm-12 col-md-8 col-lg-8  align-self-stretch  mobile-fix-size">
+                {% include _components/_figure.html img="img/cover.jpg" picture-fit="cover" figure-caption-absolute="figure-caption-absolute"   %}
 
             </div>
-            <div class="second-col col-xs-12 col-sm-12 col-md-7  col-lg-8">
+            <div class="second-col col-xs-12 col-sm-12 col-md-4  col-lg-4">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mostramos la imagen con altura 100% dependiendo del padding del col con cover" %}
                 {% include _components/_copy.html %}
@@ -59,16 +59,16 @@
     <div class="container">
 
         <div class="row align-items-center">
-            <div class="first-col col-xs-12 col-sm-12 col-md-5 col-lg-4 ">
+            <div class="first-col col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
                 <div class="content-entry">
                 {% include _components/_mapa.html  ratio="img-ratio--4-3"  %}
                 </div>
 
             </div>
-            <div class="second-col col-xs-12 col-sm-12 col-md-7 col-lg-8">
+            <div class="second-col col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según ratio" %}
-                {% include _components/_copy.html %}
+                    {% include _elements/_form.html  %}
                 </div>
 
             </div>
@@ -76,18 +76,19 @@
 
     </div>
 </section>
-<section class="block block-cover ">
+<section class="block block-cover block-height-m">
     <div class="container-fluid">
 
         <div class="row align-items-center">
-            <div class="first-col col-xs-12 col-sm-12 col-md-5 col-lg-4   align-self-stretch">
+            <div class="first-col col-xs-12 col-sm-12 col-md-4 col-lg-4 align-self-stretch mobile-fix-size">
                 {% include _components/_mapa.html   ratio="img-ratio--4-3"    %}
 
             </div>
-            <div class="second-col col-xs-12 col-sm-12 col-md-7  col-lg-8">
+            <div class="second-col col-xs-12 col-sm-12 col-md-8  col-lg-8">
                 <div class="content-entry">
                 {% include _components/_h3.html title="Mapa según altura de bloque" %}
                 {% include _components/_copy.html %}
+                 {% include _elements/_form.html  %}
                 </div>
 
             </div>

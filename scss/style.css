@@ -4957,10 +4957,9 @@ body {
 .btn, .form, .form-inline, .form-check {
   margin-bottom: 1em; }
 
-.col-padding-bottom [class^=col] {
-  padding-bottom: 1.5rem; }
-.col-padding-bottom .no-gutters [class^=col] {
-  padding-bottom: 0; }
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 110%; } }
 
 .block {
   position: relative;
@@ -4981,6 +4980,9 @@ form:last-child,
 ul {
   list-style-type: none;
   padding-left: 1.5rem; }
+
+.lead {
+  line-height: 1.2; }
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
@@ -5018,6 +5020,14 @@ ul {
     min-height: 100%;
     border: 0; }
 
+.block-cover .figure-content .size {
+  height: 0;
+  padding-bottom: 100%; }
+  @media only screen and (min-width: 960px) {
+    .block-cover .figure-content .size {
+      height: inherit;
+      padding-bottom: inherit; } }
+
 .figure-group figure {
   display: inline-block; }
 
@@ -5029,75 +5039,75 @@ ul {
 .padding-xxs {
   padding: 0em; }
 
-.padding-xs, .content {
-  padding: 1em; }
-
-.padding-s {
-  padding: 2em; }
-
-.padding-m {
-  padding: 3em; }
-
-.padding-l {
-  padding: 4em; }
-
-.padding-xl {
-  padding: 5em; }
-
-.padding-xxl {
-  padding: 10em; }
-
 .padding-v-xxs {
   padding-top: 0em;
   padding-bottom: 0em; }
-
-.padding-v-xs {
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-.padding-v-s {
-  padding-top: 2em;
-  padding-bottom: 2em; }
-
-.padding-v-m {
-  padding-top: 3em;
-  padding-bottom: 3em; }
-
-.padding-v-l {
-  padding-top: 4em;
-  padding-bottom: 4em; }
-
-.padding-v-xl {
-  padding-top: 5em;
-  padding-bottom: 5em; }
-
-.padding-v-xxl {
-  padding-top: 10em;
-  padding-bottom: 10em; }
 
 .padding-h-xxs {
   padding-left: 0em;
   padding-right: 0em; }
 
+.padding-xs {
+  padding: 1em; }
+
+.padding-v-xs {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
 .padding-h-xs {
   padding-left: 1em;
   padding-right: 1em; }
+
+.padding-s {
+  padding: 2em; }
+
+.padding-v-s {
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
 .padding-h-s {
   padding-left: 2em;
   padding-right: 2em; }
 
+.padding-m {
+  padding: 3em; }
+
+.padding-v-m {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
 .padding-h-m {
   padding-left: 3em;
   padding-right: 3em; }
+
+.padding-l {
+  padding: 4em; }
+
+.padding-v-l {
+  padding-top: 4em;
+  padding-bottom: 4em; }
 
 .padding-h-l {
   padding-left: 4em;
   padding-right: 4em; }
 
+.padding-xl {
+  padding: 5em; }
+
+.padding-v-xl {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
 .padding-h-xl {
   padding-left: 5em;
   padding-right: 5em; }
+
+.padding-xxl {
+  padding: 10em; }
+
+.padding-v-xxl {
+  padding-top: 10em;
+  padding-bottom: 10em; }
 
 .padding-h-xxl {
   padding-left: 10em;
@@ -5124,7 +5134,7 @@ ul {
   -webkit-column-count: 3;
   column-count: 3; }
 
-.img-ratio--square {
+.img-ratio--1-1 {
   height: 0;
   padding-bottom: 100%; }
 .img-ratio--4-3 {
@@ -5239,19 +5249,17 @@ position-relative {
   padding: 1rem; }
   @media only screen and (min-width: 960px) {
     .content-entry {
-      padding-left: 5%;
-      padding-right: 15%; }
+      margin-left: 5%;
+      margin-right: 15%; }
       .first-col .content-entry {
-        padding-left: 15%;
-        padding-right: 5%; }
+        margin-left: 15%;
+        margin-right: 5%; }
       .flex-row-reverse .first-col .content-entry {
-        padding-left: 5%;
-        padding-right: 15%; }
+        margin-left: 5%;
+        margin-right: 15%; }
       .flex-row-reverse .second-col .content-entry {
-        padding-left: 15%;
-        padding-right: 5%; } }
-  .block-iframe .content-entry {
-    padding-top: 2rem; }
+        margin-left: 15%;
+        margin-right: 5%; } }
 
 @media only screen and (min-width: 960px) {
   .hidden-desktop {
@@ -5271,13 +5279,26 @@ position-relative {
 
   .visible-tablets {
     display: block !important; } }
+/*CLASES CONTAINERS*/
+.container-xs {
+  max-width: 33.75em; }
+
+.container-s {
+  max-width: 45em; }
+
+.container-m {
+  max-width: 60em; }
+
+.container-l {
+  max-width: 71.25em; }
+
 .section {
-  border-bottom: 1px solid #e2e2e2;
   padding: 20px 0; }
 
-.content {
-  background: #F5F5F5;
-  border: 2px solid #e2e2e2; }
+.col-padding-bottom [class^=col] {
+  padding-bottom: 1.5rem; }
+.col-padding-bottom .no-gutters [class^=col] {
+  padding-bottom: 0; }
 
 .section-align .example {
   min-height: 15rem; }

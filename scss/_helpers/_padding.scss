@@ -15,26 +15,18 @@ $paddings: (
   .padding-#{$section} {
     padding: $padding;
   }
-}
-
-
-
-
-@each $section, $padding in $paddings {
   .padding-v-#{$section} {
     padding-top: $padding;
     padding-bottom: $padding;
-
   }
-}
-
-@each $section, $padding in $paddings {
   .padding-h-#{$section} {
     padding-left: $padding;
     padding-right: $padding;
 
 
   }
-
 }
+
+
+
 

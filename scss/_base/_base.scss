@@ -12,15 +12,11 @@ body{
   margin-bottom: 1em;
 }
 
-.col-padding-bottom{
-  [class^=col] {
-    padding-bottom: 1.5rem;
 
-  }
-  .no-gutters {
-    [class^=col] {
-      padding-bottom: 0;
-    }
+
+html{
+  @media #{$big-screen}{
+      font-size:110%;
   }
 }
 
@@ -34,9 +30,13 @@ body{
     padding: 0;
   }
 }
+
 form{
   margin-bottom: 1rem;
 }
+
+
+
 figure,
 p,
 button,
@@ -47,7 +47,14 @@ form,
   }
 }
 
+
 ul{
   list-style-type: none;
   padding-left: 1.5rem;
+}
+
+
+
+.lead{
+  line-height: 1.2;
 }

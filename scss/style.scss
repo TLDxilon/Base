@@ -23,6 +23,8 @@
 @import "_helpers/_height-block.scss";
 @import "_helpers/_entry.scss";
 @import "_helpers/_breakpoints.scss";
+@import "_helpers/_container-size.scss";
+
 
 @import "_guide/_grid.scss";
 
@@ -32,3 +34,4 @@
 @import "_elements/_media.scss";
 
 @import "_elements/_list-menu.scss";
+@import "_fix/_mobile-fix-size.scss";

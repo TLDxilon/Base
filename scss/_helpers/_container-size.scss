@@ -1,0 +1,21 @@
+/*CLASES CONTAINERS*/
+
+
+$widths: (
+
+        'xs': 33.75em,
+        's': 45em,
+        'm': 60em,
+        'l': 71.25em,
+
+
+);
+
+@each $size, $width in $widths {
+  .container-#{$size} {
+    max-width: $width;
+  }
+
+}
+
+

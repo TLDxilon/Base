@@ -1,14 +1,18 @@
 .section {
-  border-bottom: 1px solid #e2e2e2;
   padding: 20px 0;
 }
 
-.content{
-  background: #F5F5F5;
-  @extend .padding-xs;
-  border: 2px solid #e2e2e2;
 
+.col-padding-bottom{
+  [class^=col] {
+    padding-bottom: 1.5rem;
 
+  }
+  .no-gutters {
+    [class^=col] {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .section-align{
