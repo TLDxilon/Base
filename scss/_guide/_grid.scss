@@ -2,7 +2,13 @@
   padding: 20px 0;
 }
 
+.content-sample{
+  background: #F5F5F5;
+  @extend .padding-xs;
+  border: 2px solid #e2e2e2;
 
+
+}
 .col-padding-bottom{
   [class^=col] {
     padding-bottom: 1.5rem;

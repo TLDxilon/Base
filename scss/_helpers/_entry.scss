@@ -5,6 +5,10 @@
   @media #{$desktop}{
     margin-left: 5%;
     margin-right: 15%;
+    .block-cover &{
+      padding-top: 10%;
+      padding-bottom:10%
+    }
     .first-col &{
       margin-left: 15%;
       margin-right: 5%;

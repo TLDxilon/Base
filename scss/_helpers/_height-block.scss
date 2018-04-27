@@ -19,11 +19,26 @@ $paddings: (
        &.block-cover {
          padding-top: 0;
          padding-bottom: 0;
-         [class*="col-"]{
+         .cover-item{
            padding-top: $padding;
            padding-bottom: $padding;
          }
        }
+    }
+  }
+}
+
+
+.block-height-full{
+  height: auto;
+  min-height: 100vh;
+  &.block-cover {
+    height: inherit;
+    min-height: inherit;
+    [class*="col-"]{
+      height: auto;
+      min-height: 100vh;
+
     }
   }
 }

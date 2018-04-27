@@ -26,6 +26,8 @@ html{
 .block{
   position:relative;
   padding: 1rem 0;
+  @extend .d-flex;
+  @extend .align-items-center;
   &.block-cover{
     padding: 0;
   }
@@ -57,4 +59,10 @@ ul{
 
 .lead{
   line-height: 1.2;
+}
+
+
+
+section{
+
 }
