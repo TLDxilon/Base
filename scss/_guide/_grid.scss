@@ -68,9 +68,7 @@ pre{
  // transform: scale3d(.9,.9,.9);
 }
 
-.element{
-  @include box-shadow(0px, 0, 16px, rgba(0,0,0,0.2));
-}
+
 
 .nav{
   list-style-type: none;
@@ -86,17 +84,3 @@ pre{
 
 
 
-.nav-item{
-  padding: 0.5rem 0;
-  border-top: 1px solid #EEE;
-  border-bottom: 1px solid #EEE;
-  a{
-    color: #212529;
-    padding: 0 0 0 0.5rem;
-  }
-
-}
-.submenu{
-  padding: 1rem 0;
-  background: white;
-}

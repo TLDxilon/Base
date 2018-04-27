@@ -26,19 +26,26 @@ $paddings: (
        }
     }
   }
+  .block-height-full{
+    height: auto;
+    min-height: 100vh;
+    &.block-cover {
+      height: inherit;
+      min-height: inherit;
+      [class*="col-"]{
+        height: auto;
+        min-height: 100vh;
+
+      }
+    }
+  }
 }
 
 
-.block-height-full{
-  height: auto;
-  min-height: 100vh;
-  &.block-cover {
-    height: inherit;
-    min-height: inherit;
-    [class*="col-"]{
-      height: auto;
-      min-height: 100vh;
+.height-l {
 
-    }
+  .clase-que-aplica-la-altura {
+
   }
+
 }
