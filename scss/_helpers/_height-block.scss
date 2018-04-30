@@ -26,7 +26,7 @@ $paddings: (
        }
     }
   }
-  .block-height-full{
+  .block-fullscreen{
     height: auto;
     min-height: 100vh;
     &.block-cover {
@@ -35,17 +35,10 @@ $paddings: (
       [class*="col-"]{
         height: auto;
         min-height: 100vh;
+        display: table;
 
       }
     }
   }
 }
 
-
-.height-l {
-
-  .clase-que-aplica-la-altura {
-
-  }
-
-}

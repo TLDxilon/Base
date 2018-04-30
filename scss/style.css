@@ -4879,7 +4879,8 @@ ul {
   padding-left: 1.5rem; }
 
 .lead {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
@@ -5141,46 +5142,87 @@ position-relative {
         padding-top: 30em;
         padding-bottom: 30em; }
 
-  .block-height-full {
+  .block-fullscreen {
     height: auto;
     min-height: 100vh; }
-    .block-height-full.block-cover {
+    .block-fullscreen.block-cover {
       height: inherit;
       min-height: inherit; }
-      .block-height-full.block-cover [class*="col-"] {
+      .block-fullscreen.block-cover [class*="col-"] {
         height: auto;
-        min-height: 100vh; } }
+        min-height: 100vh;
+        display: table; } }
 .content-entry {
   position: relative;
   margin-top: 5%;
   margin-bottom: 5%; }
-  @media only screen and (min-width: 960px) {
-    .content-entry {
-      padding-left: 0;
-      padding-right: 0;
+  @media only screen and (min-width: 720px) {
+    .second-col .content-entry {
       margin-left: 2vw;
-      margin-right: 7vw; }
-      .first-col .content-entry {
-        margin-left: 7vw;
+      margin-right: 0; }
+      .container .second-col .content-entry {
+        margin-left: 2vw;
+        margin-right: 0; }
+      .flex-row-reverse .second-col .content-entry {
+        margin-left: 0;
         margin-right: 2vw; }
-        .container .first-col .content-entry {
+        .container .flex-row-reverse .second-col .content-entry {
           margin-left: 0;
           margin-right: 2vw; }
-      .flex-row-reverse .first-col .content-entry {
+    .first-col .content-entry {
+      margin-left: 0;
+      margin-right: 2vw; }
+      .container .first-col .content-entry {
+        margin-left: 0;
+        margin-right: 2vw; }
+    .flex-row-reverse .first-col .content-entry {
+      margin-left: 2vw;
+      margin-right: 0; }
+      .container .flex-row-reverse .first-col .content-entry {
         margin-left: 2vw;
-        margin-right: 7vw; }
-        .container .flex-row-reverse .first-col .content-entry {
-          margin-left: 2vw;
-          margin-right: 0; }
+        margin-right: 0; } }
+  @media only screen and (min-width: 960px) {
+    .second-col .content-entry {
+      margin-left: 2vw;
+      margin-right: 7vw; }
+      .container .second-col .content-entry {
+        margin-left: 2vw;
+        margin-right: 0; }
       .flex-row-reverse .second-col .content-entry {
         margin-left: 7vw;
         margin-right: 2vw; }
         .container .flex-row-reverse .second-col .content-entry {
-          margin-left: 2vw;
-          margin-right: 0; }
-      .container .content-entry {
+          margin-left: 0;
+          margin-right: 2vw; }
+    .first-col .content-entry {
+      margin-left: 7vw;
+      margin-right: 2vw; }
+      .container .first-col .content-entry {
+        margin-left: 0;
+        margin-right: 2vw; }
+    .flex-row-reverse .first-col .content-entry {
+      margin-left: 2vw;
+      margin-right: 7vw; }
+      .container .flex-row-reverse .first-col .content-entry {
         margin-left: 2vw;
         margin-right: 0; } }
+  @media only screen and (min-width: 1400px) {
+    .container-fluid .col-lg-6 .content-entry {
+      max-width: 630px; }
+    .container-fluid .col-lg-5 .content-entry {
+      max-width: 530px; }
+    .container-fluid .col-lg-4 .content-entry {
+      max-width: 430px; }
+    .container-fluid .content-entry {
+      max-width: 630px; }
+      .block-cover .container-fluid .content-entry {
+        margin-left: auto;
+        margin-right: auto; }
+      .block-cover .container-fluid .content-entry {
+        margin-left: auto;
+        margin-right: auto; }
+      .block-fullscreen .container-fluid .content-entry {
+        padding: 10%; } }
 
 @media only screen and (min-width: 960px) {
   .hidden-desktop {
@@ -5212,6 +5254,16 @@ position-relative {
 
 .container-l {
   max-width: 71.25em; }
+
+.vertical-align-top {
+  display: table-cell;
+  vertical-align: top; }
+.vertical-align-middle {
+  display: table-cell;
+  vertical-align: middle; }
+.vertical-align-bottom {
+  display: table-cell;
+  vertical-align: bottom; }
 
 .section {
   padding: 20px 0; }
@@ -5302,8 +5354,5 @@ pre {
   .target-image .rounded-circle {
     height: 7rem;
     width: 7rem; }
-
-.list-menu {
-  padding-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
