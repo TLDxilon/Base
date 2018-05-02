@@ -11,16 +11,30 @@ body{
 .btn, .form, .form-inline, .form-check{
   margin-bottom: 1em;
 }
+.btn{
+  .form-inline &{
+    margin: 0;
+  }
+  @media #{$big-screen}{
+    padding: $input-btn-padding-y-big-screen $input-btn-padding-x-big-screen;
+  }
 
-
+}
+ol ol, ul ul, ol ul, ul ol {
+  margin: 1em 0;
+}
 
 html{
   @media #{$big-screen}{
       font-size:110%;
   }
+
 }
 
-
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 
 
 .block{
@@ -34,20 +48,9 @@ html{
 }
 
 form{
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
-
-
-figure,
-p,
-button,
-form,
-.btn{
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
 
 
 ul{
@@ -59,11 +62,13 @@ ul{
 
 .lead{
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 
-
-section{
-
+figure {
+  margin: 1em 0;
+}
+blockquote {
+  margin: 1em 0;
 }

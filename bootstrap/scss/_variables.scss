@@ -322,8 +322,10 @@ $table-dark-color:            $body-bg !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .445rem !default;
+$input-btn-padding-x:         .95rem !default;
+$input-btn-padding-y-big-screen:         $input-btn-padding-y * 1.1 !default;
+$input-btn-padding-x-big-screen:         $input-btn-padding-x * 1.1 !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;

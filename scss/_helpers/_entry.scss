@@ -1,11 +1,13 @@
 .content-entry{
    position: relative;
-   margin-top: 5%;
-   margin-bottom: 5%;
+   margin-left: auto;
+   margin-right: auto;
 
 
 
   @media #{$big-tablet}{
+    margin-top: 10%;
+    margin-bottom: 10%;
     .second-col &{
       margin-left: 2vw;
       margin-right: 0;
@@ -42,6 +44,10 @@
 
         }
       }
+    }
+    .block-fullscreen.block-cover &{
+      padding: 10%;
+
     }
 
   }
@@ -107,10 +113,6 @@
         margin-left: auto;
         margin-right: auto;
 
-      }
-      .block-cover &{
-        margin-left: auto;
-        margin-right: auto;
       }
       .block-fullscreen &{
         padding: 10%;
