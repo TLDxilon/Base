@@ -1,7 +1,8 @@
 .content-entry{
    position: relative;
    margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
+   max-width: 616px;
 
 
 
@@ -53,15 +54,15 @@
   }
   @media #{$desktop}{
     .second-col &{
-      margin-left: 2vw;
-      margin-right: 7vw;
+      margin-left: 20%;
+      margin-right: 20%;
       .container &{
         margin-left: 2vw;
         margin-right: 0;
       }
       .flex-row-reverse & {
-        margin-left: 7vw;
-        margin-right: 2vw;
+        margin-left: 20%;
+        margin-right: 20%;
         .container &{
           margin-left: 0;
           margin-right: 2vw;
@@ -70,8 +71,8 @@
     }
 
     .first-col &{
-      margin-left: 7vw;
-      margin-right: 2vw;
+      margin-left: 20%;
+      margin-right: 20%;
       .container &{
         margin-left: 0;
         margin-right: 2vw;
@@ -80,8 +81,8 @@
     }
     .first-col & {
       .flex-row-reverse & {
-        margin-left: 2vw;
-        margin-right: 7vw;
+        margin-left: 20%;
+        margin-right: 20%;
         .container &{
           margin-left: 2vw;
           margin-right: 0;
@@ -92,28 +93,9 @@
 
   }
   @media #{$big-screen}{
-    .col-lg-6 &{
-      .container-fluid & {
-        max-width: 630px;
-      }
-    }
-    .col-lg-5 &{
-      .container-fluid & {
-        max-width: 530px;
-      }
-    }
-    .col-lg-4 &{
-      .container-fluid & {
-        max-width: 430px;
-      }
-    }
-    .container-fluid &{
-      max-width: 630px;
-      .block-cover &{
-        margin-left: auto;
-        margin-right: auto;
 
-      }
+
+    .container-fluid &{
       .block-fullscreen &{
         padding: 10%;
       }

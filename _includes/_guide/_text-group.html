@@ -57,22 +57,99 @@
            {% include _components/_copy.html %}
            <form>
                <div class="form-group">
-                   <label for="exampleInputEmail1">Email address</label>
-                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                   {% include _components/_label.html class="" title="E-mail adress" %}
+                   {% include _components/_input.html class="" placeholder="Enter e-mail" %}
                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                </div>
                <div class="form-group">
-                   <label for="exampleInputPassword1">Password</label>
-                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                   {% include _components/_label.html class="" title="Password" %}
+                   {% include _components/_input.html class="" placeholder="Password" %}
                </div>
-               <div class="form-check">
-                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
-               </div>
-               {% include _components/_btn.html title-btn="Submit"  %}
+
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
+
+               {% include _components/_btn.html class="btn-primary" title-btn="Submit"  %}
            </form>
            {% include _components/_copy.html %}
            {% include _components/_h5.html title="Alignment Features" %}
 
            {% include _components/_copy.html %}
            {% include _components/_copy.html %}
+
+           {% include _components/_h1.html title="Bootstrap heading" %}
+           {% include _components/_h2.html title="Bootstrap heading" %}
+           {% include _components/_h3.html title="Bootstrap heading" %}
+           {% include _components/_h4.html title="Bootstrap heading" %}
+           {% include _components/_h5.html title="Bootstrap heading" %}
+
+           <span class="h1">Bootstrap heading span</span>
+           <span class="h2">Bootstrap heading span</span>
+           <span class="h3">Bootstrap heading span</span>
+           <span class="h4">Bootstrap heading span</span>
+           <span class="h5">Bootstrap heading span</span>
+           <span class="h6">Bootstrap heading span</span>
+
+           <h3>{% include _components/_badge.html class="badge-primary" title="Agotado" %}</h3>
+           <h4>{% include _components/_badge.html class="badge-danger" title="Oferta" %}</h4>
+           <h5>{% include _components/_badge.html class="badge-success" title="Disponible" %}</h5>
+           {% include _components/_badge.html class="badge-primary" title="Agotado" %}
+           {% include _components/_badge.html class="badge-danger" title="Oferta" %}
+           {% include _components/_badge.html class="badge-success" title="Disponible" %}
+
+           <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                   <li class="breadcrumb-item"><a href="#">Home</a></li>
+                   <li class="breadcrumb-item"><a href="#">Library</a></li>
+                   <li class="breadcrumb-item active" aria-current="page">Data</li>
+               </ol>
+           </nav>
+            <div>
+                {% include _components/_btn.html class="btn-primary" title-btn="Primary"  %}
+                {% include _components/_btn.html class="btn-linky" title-btn="Link"  %}
+                {% include _components/_btn.html class="btn-light" title-btn="Light"  %}
+
+            </div>
+
+           <div>
+               {% include _components/_btn.html class="btn-outline-primary" title-btn="Primary"  %}
+               {% include _components/_btn.html class="btn-outline-secondary" title-btn="Secondary"  %}
+
+           </div>
+           <div style="max-width:400px">
+               {% include _components/_btn.html class="btn-primary  btn-block" title-btn="Block"  %}
+               {% include _components/_btn.html class="btn btn-secondary  btn-block" title-btn="Block"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html class="btn-primary  disabled" title-btn="Primary disable"  %}
+               {% include _components/_btn.html class="btn-secondary  disabled" title-btn="Secondary disable"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html class="btn-primary btn-lg" title-btn="Primary large"  %}
+               {% include _components/_btn.html class="btn btn-secondary btn-lg" title-btn="Secondary large"  %}
+
+           </div>
+           <div class="form-check-group">
+
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
+
+           </div>
+           <div class="form-check-group">
+               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
+               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
+               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
+
+           </div>
+           <div class="form-check-group">
+               {% include _components/_check.html class="" type="radio" text="Default radio"  %}
+               {% include _components/_check.html class="" type="radio" text="Second default radio"  %}
+
+           </div>
+           <select class="form-control">
+               <option>Default select</option>
+               <option>Default select</option>
+               <option>Default select</option>
+           </select>

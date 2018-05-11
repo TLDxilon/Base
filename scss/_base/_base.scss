@@ -8,8 +8,15 @@ body{
   transform-style: preserve-3d;
 }
 
-.btn, .form, .form-inline, .form-check{
+.btn, .form, .form-inline, .form-check-group{
   margin-bottom: 1em;
+}
+
+.form-check{
+  margin-bottom: 1em;
+  .form-check-group &{
+    margin-bottom: 0;
+  }
 }
 .btn{
   .form-inline &{
@@ -34,8 +41,19 @@ html{
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1em;
   margin-top: 1em;
+  @media #{$desktop}{
+    &:first-child{
+      margin-top: 0;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
 
+p{
+  margin-bottom: 1em;
+}
 
 .block{
   position:relative;
