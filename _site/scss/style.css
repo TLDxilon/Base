@@ -5104,7 +5104,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, .h1:first-child, .h2:first-child, .h3:first-child, .h4:first-child, .h5:first-child, .h6:first-child {
       margin-top: 0; }
     h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+    .element h1, .element h2, .element h3, .element h4, .element h5, .element h6, .element .h1, .element .h2, .element .h3, .element .h4, .element .h5, .element .h6 {
+      margin-top: 1em; } }
 
 p {
   margin-bottom: 1em; }
