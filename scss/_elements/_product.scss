@@ -1,6 +1,12 @@
-.target-image{
-   .rounded-circle{
-      height:7rem;
-      width:7rem;
+.list-products{
+   padding-top: 2em;
+}
+
+.product-item{
+   p{
+      line-height: 1;
+   }
+   .btn{
+      margin-top:1em;
    }
 }

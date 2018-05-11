@@ -2,6 +2,23 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
+            <div class="filters-group">
+                {% include _components/_h5.html title="Todas las categorías" %}
+                {% include _components/_h5.html title="Tipo" %}
+                <hr>
+                <div class="form-check-group">
+                {% include _components/_check.html class="" type="checkbox" text="Running"  %}
+                {% include _components/_check.html class="" type="checkbox" text="Indoor"  %}
+                {% include _components/_check.html class="" type="checkbox" text="Casual"  %}
+                </div>
+                {% include _components/_h5.html title="Marcas" %}
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_check.html class="" type="checkbox" text="Nike"  %}
+                    {% include _components/_check.html class="" type="checkbox" text="Adidas"  %}
+                    {% include _components/_check.html class="" type="checkbox" text="Converse"  %}
+                </div>
+            </div>
 
         </div>
         <div class="col-9">
@@ -14,7 +31,48 @@
                     {% include _components/_select.html %}
                 </div>
             </div>
+            <button type="button" class="btn btn-secondary">
+                Indoor <span class="badge">X</span>
 
+            </button>
+            <button type="button" class="btn btn-secondary">
+                Indoor <span class="badge">X</span>
+
+            </button>
+
+            <div class="row list-products">
+
+
+                 <div class="col-4">
+                     {% include _elements/_product.html title="Probando" img="img/cover.jpg" %}
+                 </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/cover.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/cover.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+                <div class="col-4">
+                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                </div>
+
+
+            </div>
 
         </div>
     </div>

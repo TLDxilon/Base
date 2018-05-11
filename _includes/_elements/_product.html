@@ -1,14 +1,22 @@
-<div class="element target">
+<div class="element product-item">
     <div class="target-image {{ include.type }} position-relative">
-        {% include _elements/_overlay.html img="img/cover.jpg" picture-fit="cover" ratio="img-ratio--4-3" %}
+        {% include _elements/_overlay.html  picture-fit="cover" ratio="img-ratio--4-3" %}
         <!--{% include _components/_icon.html icon="heart"  %}-->
 
     </div>
     <div class="target-body">
-        <h4>h4 título de elemento</h4>
-        <p><small>Eluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magnionseq uuntur magni dolores eos.</small></p>
+       <a href="#">{% include _components/_h5.html  title="Título del producto" %}</a>
+        <a href="#"><span>Nike</span></a>
+        <p><small>Eluptatem quia voluptas sit aspmagni dolores eos.</small></p>
+        <div class="d-flex justify-content-between">
+            <span>54.95€</span>
+            <span><del>74.95€</del></span>
+            {% include _components/_badge.html class="badge-danger" title="Oferta" %}
+        </div>
 
-        {% include _components/_btn.html title-btn="Ver más" %}
+
+
+        {% include _components/_btn.html class="btn-primary btn-block" title-btn="Ver más" %}
     </div>
 
 
