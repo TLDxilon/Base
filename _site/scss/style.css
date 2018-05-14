@@ -5236,6 +5236,11 @@ blockquote {
   width: 2rem;
   height: 2rem; }
 
+.filter-size {
+  width: 2rem;
+  height: 2rem;
+  text-align: center; }
+
 /*CLASES PADDINGS*/
 .padding-xxs {
   padding: 0em; }
@@ -5657,5 +5662,8 @@ pre {
   margin-top: 1em; }
 .product-item h5 {
   margin-bottom: 0; }
+
+.pagination {
+  margin: 1em 0; }
 
 /*# sourceMappingURL=style.css.map */
