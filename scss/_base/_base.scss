@@ -28,7 +28,7 @@ body{
 
 }
 ol ol, ul ul, ol ul, ul ol {
-  margin: 1em 0;
+  margin: .5em 0;
 }
 
 html{
@@ -87,4 +87,11 @@ figure {
 }
 blockquote {
   margin: 1em 0;
+}
+
+.form-control{
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }

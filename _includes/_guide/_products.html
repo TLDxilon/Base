@@ -3,20 +3,86 @@
     <div class="row">
         <div class="col-3">
             <div class="filters-group">
+                <div class="filters-group">
                 {% include _components/_h5.html title="Todas las categorías" %}
-                {% include _components/_h5.html title="Tipo" %}
-                <hr>
-                <div class="form-check-group">
-                {% include _components/_check.html class="" type="checkbox" text="Running"  %}
-                {% include _components/_check.html class="" type="checkbox" text="Indoor"  %}
-                {% include _components/_check.html class="" type="checkbox" text="Casual"  %}
+                <ul class="list-unstyled">
+                    <li>Chaquetas</li>
+                    <li>Abrigos</li>
+                    <li>Tops</li>
+                    <li>Camisas</li>
+                    <li>Zapatos  <i class="fas fa-angle-down"></i>
+
+
+
+                        <ul>
+                            <li>Botas</li>
+                            <li><a href="#">Sneakers</a></li>
+                        </ul>
+                    </li>
+                    <li>Camisetas</li>
+                    <li>Bolsos</li>
+                    <li>Accesorios</li>
+                </ul>
                 </div>
-                {% include _components/_h5.html title="Marcas" %}
-                <hr>
-                <div class="form-check-group">
-                    {% include _components/_check.html class="" type="checkbox" text="Nike"  %}
-                    {% include _components/_check.html class="" type="checkbox" text="Adidas"  %}
-                    {% include _components/_check.html class="" type="checkbox" text="Converse"  %}
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Tipo" %}
+                    <hr>
+                    <div class="form-check-group">
+                        {% include _components/_check.html class="" type="checkbox" text="Running"  %}
+                        {% include _components/_check.html class="" type="checkbox" text="Indoor"  %}
+                        {% include _components/_check.html class="" type="checkbox" text="Casual"  %}
+                    </div>
+                </div>
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Marcas" %}
+                    <hr>
+                    {% include _components/_input.html class="" placeholder="Buscar" %}
+                    <div class="form-check-group">
+                        {% include _components/_check.html class="" type="checkbox" text="Nike"  %}
+                        {% include _components/_check.html class="" type="checkbox" text="Adidas"  %}
+                        {% include _components/_check.html class="" type="checkbox" text="Converse"  %}
+                    </div>
+                </div>
+
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Rango de precios" %}
+                    <hr>
+                    {% include _components/_range-slider.html  %}
+                </div>
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Descuento" %}
+                    <hr>
+                    <div class="form-check-group">
+                        {% include _components/_check.html class="" type="radio" text="30%"  %}
+                        {% include _components/_check.html class="" type="radio" text="20%"  %}
+
+                    </div>
+                </div>
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Talla" %}
+                    <hr>
+                    <div class="form-check-group">
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm' btn-title='XS' %}
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm' btn-title='S' %}
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm' btn-title='M' %}
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm' btn-title='L' %}
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm' btn-title='XL' %}
+
+
+                    </div>
+                </div>
+                <div class="filters-group">
+                    {% include _components/_h5.html title="Color" %}
+                    <hr>
+                    <div class="form-check-group">
+                        {% include _components/_btn.html btn-class='btn-secondary btn-sm filter-color' btn-title='' %}
+                        {% include _components/_btn.html btn-class='btn-danger btn-sm filter-color' btn-title='' %}
+                        {% include _components/_btn.html btn-class='btn-primary btn-sm filter-color' btn-title='' %}
+                        {% include _components/_btn.html btn-class='btn-light btn-sm filter-color' btn-title='' %}
+                        {% include _components/_btn.html btn-class='btn-warning btn-sm filter-color' btn-title='' %}
+
+
+                    </div>
                 </div>
             </div>
 
@@ -31,44 +97,46 @@
                     {% include _components/_select.html %}
                 </div>
             </div>
-            <button type="button" class="btn btn-secondary">
-                Indoor <span class="badge">X</span>
+            {% include _components/_btn.html btn-class='btn btn-secondary btn-sm' btn-title='Indoor x' %}
+            {% include _components/_btn.html btn-class='btn btn-secondary btn-sm' btn-title='Running x' %}
 
-            </button>
-            <button type="button" class="btn btn-secondary">
-                Indoor <span class="badge">X</span>
-
-            </button>
 
             <div class="row list-products">
 
+                {% for item in page.products %}
+
+                <div class="col-4">
+                    {% include _elements/_product.html %}
+                </div>
+                {% endfor %}
+
 
                  <div class="col-4">
-                     {% include _elements/_product.html title="Probando" img="img/cover.jpg" %}
+                     {% include _elements/_product.html title ='Nike overkee' img ='img/products/s1.jpg' picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-primary btn-block" btn-title="Ver más" badge-class="badge-danger" badge-title="Oferta" marca="Nike" %}
                  </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html  title="Converse all star blancas"   img ='img/products/s2.jpg'  picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-secondary disabled btn-block" btn-title="Ver más" badge-class="badge-primary" badge-title="Agotado"  marca="Converse" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html  title="Converse all star negras"  img ='img/products/s3.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Converse" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/cover.jpg" %}
+                    {% include _elements/_product.html  title="Adidas Gazelle"  img ='img/products/s4.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html  title="Nike pink casual"  img ='img/products/s5.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Nike" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html title="Adidas Stan Smith"  img ='img/products/s6.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/cover.jpg" %}
+                    {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s7.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s8.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
                 <div class="col-4">
-                    {% include _elements/_product.html img="img/products/s1.jpg" %}
+                    {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s1.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas"%}
                 </div>
 
 
@@ -79,3 +147,6 @@
 
 </div>
 </section>
+
+
+{{ page.products.img1 }}

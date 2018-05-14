@@ -16,9 +16,9 @@
 
                <div class="form-group mr-sm-3 mb-2">
                    <label class=" mr-sm-3">E-mail</label>
-                   <input type="password" class="form-control" id="inputPassword2" placeholder="email@email.com">
+                   <input type="password" class="form-control" id="inputPassword3" placeholder="email@email.com">
                </div>
-               {% include _components/_btn.html title-btn="Inscribirse a la  newsletter" class="mb-2" %}
+               {% include _components/_btn.html  btn-class="btn-primary" btn-title="Inscribirse a la  newsletter" class="mb-2" %}
            </form>
 
            {% include _components/_h2.html title="Features of a Flexbox Grid System" %}
@@ -43,10 +43,10 @@
            <form class="form-inline">
 
                <div class="form-group mr-sm-3 mb-2">
-                   <label for="inputPassword2" class="sr-only">Password</label>
-                   <input type="password" class="form-control" id="inputPassword2" placeholder="email@email.com">
+                   <label for="inputPasswo" class="sr-only">Password</label>
+                   <input type="password" class="form-control" id="inputPasswo" placeholder="email@email.com">
                </div>
-               {% include _components/_btn.html title-btn="Inscribirse a la  newsletter" class="mb-2" %}
+               {% include _components/_btn.html  btn-class="btn-primary" btn-title="Inscribirse a la  newsletter" class="mb-2" %}
            </form>
 
            {% include _components/_copy.html %}
@@ -68,7 +68,7 @@
 
                {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
 
-               {% include _components/_btn.html class="btn-primary" title-btn="Submit"  %}
+               {% include _components/_btn.html  btn-class="btn-primary" class="btn-primary" btn-title="Submit"  %}
            </form>
            {% include _components/_copy.html %}
            {% include _components/_h5.html title="Alignment Features" %}
@@ -99,15 +99,15 @@
 
 
 
-           <h3>{% include _components/_badge.html class="badge-primary" title="Agotado" %}</h3>
-           <h4>{% include _components/_badge.html class="badge-danger" title="Oferta" %}</h4>
-           <h5>{% include _components/_badge.html class="badge-success" title="Disponible" %}</h5>
+           <h3>{% include _components/_badge.html badge-class="badge-primary" badge-title="Agotado" %}</h3>
+           <h4>{% include _components/_badge.html badge-class="badge-danger" badge-title="Oferta" %}</h4>
+           <h5>{% include _components/_badge.html badge-class="badge-success" badge-title="Disponible" %}</h5>
 
 
 
-           {% include _components/_badge.html class="badge-primary" title="Agotado" %}
-           {% include _components/_badge.html class="badge-danger" title="Oferta" %}
-           {% include _components/_badge.html class="badge-success" title="Disponible" %}
+           {% include _components/_badge.html badge-class="badge-primary" badge-title="Agotado" %}
+           {% include _components/_badge.html badge-class="badge-danger" badge-title="Oferta" %}
+           {% include _components/_badge.html badge-class="badge-success" badge-title="Disponible" %}
 
 
            <nav aria-label="breadcrumb">
@@ -119,30 +119,30 @@
                </ol>
            </nav>
             <div>
-                {% include _components/_btn.html class="btn-primary" title-btn="Primary"  %}
-                {% include _components/_btn.html class="btn-linky" title-btn="Link"  %}
-                {% include _components/_btn.html class="btn-light" title-btn="Light"  %}
+                {% include _components/_btn.html btn-class="btn-primary" btn-title="Primary"  %}
+                {% include _components/_btn.html btn-class="btn-linky" btn-title="Link"  %}
+                {% include _components/_btn.html btn-class="btn-light" btn-title="Light"  %}
 
             </div>
 
            <div>
-               {% include _components/_btn.html class="btn-outline-primary" title-btn="Primary"  %}
-               {% include _components/_btn.html class="btn-outline-secondary" title-btn="Secondary"  %}
+               {% include _components/_btn.html btn-class="btn-outline-primary" btn-title="Primary"  %}
+               {% include _components/_btn.html btn-class="btn-outline-secondary" btn-title="Secondary"  %}
 
            </div>
            <div style="max-width:400px">
-               {% include _components/_btn.html class="btn-primary  btn-block" title-btn="Block"  %}
-               {% include _components/_btn.html class="btn-outline-primary  btn-block" title-btn="Block"  %}
+               {% include _components/_btn.html btn-class="btn-primary  btn-block" btn-title="Block"  %}
+               {% include _components/_btn.html btn-class="btn-outline-primary  btn-block" btn-title="Block"  %}
 
            </div>
            <div>
-               {% include _components/_btn.html class="btn-primary  disabled" title-btn="Primary disable"  %}
-               {% include _components/_btn.html class="btn-outline-primary  disabled" title-btn="Secondary disable"  %}
+               {% include _components/_btn.html btn-class="btn-primary  disabled" btn-title="Primary disable"  %}
+               {% include _components/_btn.html btn-class="btn-outline-primary  disabled" btn-title="Secondary disable"  %}
 
            </div>
            <div>
-               {% include _components/_btn.html class="btn-primary btn-lg" title-btn="Primary large"  %}
-               {% include _components/_btn.html class="btn btn-outline-primary btn-lg" title-btn="Secondary large"  %}
+               {% include _components/_btn.html btn-class="btn-primary btn-lg" btn-title="Primary large"  %}
+               {% include _components/_btn.html btn-class="btn btn-outline-primary btn-lg" btn-title="Secondary large"  %}
 
            </div>
            <hr>
@@ -172,6 +172,10 @@
                <option>Default select</option>
                <option>Default select</option>
            </select>
+
+           {% include _components/_range-slider.html  %}
+
+
         <div style="height: 200px">
 
         </div>

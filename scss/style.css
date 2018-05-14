@@ -1400,7 +1400,7 @@ select.form-control:focus::-ms-value {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem; }
+  border-radius: 0.15rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
@@ -2033,7 +2033,7 @@ fieldset:disabled a.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem; }
+  border-radius: 0.15rem; }
 
 .btn-block {
   display: block;
@@ -5091,7 +5091,7 @@ body {
     padding: 0.4895rem 1.045rem; } }
 
 ol ol, ul ul, ol ul, ul ol {
-  margin: 1em 0; }
+  margin: .5em 0; }
 
 @media only screen and (min-width: 1400px) {
   html {
@@ -5129,6 +5129,11 @@ figure {
 
 blockquote {
   margin: 1em 0; }
+
+.form-control {
+  margin-bottom: 1em; }
+  .form-control:last-child {
+    margin-bottom: 0; }
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
@@ -5180,6 +5185,56 @@ blockquote {
 .figure-caption-absolute {
   position: absolute;
   bottom: 0; }
+
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */ }
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 0.5rem;
+  /* Specified height */
+  background: #adb5bd;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ }
+  .slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */ }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 1rem;
+    /* Set a specific slider handle width */
+    height: 1rem;
+    /* Slider handle height */
+    border-radius: 50%;
+    background: #007bff;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */ }
+  .slider::-moz-range-thumb {
+    width: 1rem;
+    /* Set a specific slider handle width */
+    height: 1rem;
+    /* Slider handle height */
+    background: #007bff;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */ }
+
+.filter-color {
+  width: 2rem;
+  height: 2rem; }
 
 /*CLASES PADDINGS*/
 .padding-xxs {
@@ -5600,5 +5655,7 @@ pre {
   line-height: 1; }
 .product-item .btn {
   margin-top: 1em; }
+.product-item h5 {
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

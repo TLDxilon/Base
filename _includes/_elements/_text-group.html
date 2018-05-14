@@ -7,8 +7,8 @@
 {% include _components/_figure.html %}
 {% include _components/_figure.html %}
 {% include _components/_copy.html %}
-{% include _components/_btn.html title-btn="Button" %}
-{% include _components/_btn.html title-btn="Button 2" outline="outline-" %}
+{% include _components/_btn.html btn-class="btn-primary" btn-title="Button" %}
+{% include _components/_btn.html btn-class="btn-primary" btn-title="Button 2" outline="outline-" %}
 
 
 {% include _components/_h2.html title="Bootstrap heading" %}
@@ -40,7 +40,7 @@
         <label for="inputPassword2" class="sr-only">Password</label>
         <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
     </div>
-    {% include _components/_btn.html title-btn="Confirm identity" class="mb-2" %}
+    {% include _components/_btn.html  btn-class="btn-primary" btn-title="Confirm identity" class="mb-2" %}
 </form>
 
 {% include _components/_copy.html %}
@@ -63,7 +63,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    {% include _components/_btn.html title-btn="Submit"  %}
+    {% include _components/_btn.html btn-title="Submit"  %}
 </form>
 {% include _components/_copy.html %}
 {% include _components/_h5.html title="Bootstrap heading" %}
