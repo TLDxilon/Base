@@ -23,3 +23,11 @@
     display: block!important;
   }
 }
+@media #{$big-tablet}{
+  .hidden-bigtablets {
+    display: none!important;
+  }
+  .visible-bigtablets {
+    display: block!important;
+  }
+}

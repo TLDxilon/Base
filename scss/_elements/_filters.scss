@@ -1,6 +1,5 @@
 .filters{
   display: none;
-  padding-top: 0.75rem;
   .title{
     margin-bottom: ($spacer-em / 2);
     &:first-child{
@@ -11,5 +10,5 @@
 
 
 .filters-group{
-  padding: 1em 0;
+  margin-bottom: 3rem;
 }
