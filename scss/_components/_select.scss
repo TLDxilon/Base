@@ -1,0 +1,76 @@
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  select{
+    display: none; /*hide original SELECT element:*/
+  }
+
+}
+
+.select-selected {
+  background-color: $white;
+  border: 1px solid $gray-400;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  &:after{
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid $gray-400;
+    border-color: $gray-400 transparent transparent transparent;
+  }
+  &.select-arrow-active{
+    &:after {
+      border-color: transparent transparent $gray-400 transparent;
+      top: 10px;
+    }
+  }
+
+}
+
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: $gray-600;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: .5em;
+
+
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: $white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid $gray-400;
+  border-radius: 2px;
+  border-top: 0;
+  div{
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.select-group{
+  margin: 1rem 0;
+}

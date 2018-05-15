@@ -93,15 +93,22 @@
             <div class="filtered-products mt-5">
                 {% include _components/_breadcrumb.html %}
                 <div class="row align-items-center title-product-bar">
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         {% include _components/_h1.html title="Sneakers (9)" %}
                     </div>
-                    <div class="col-5 col-md-5">
-                        {% include _components/_select.html %}
+                    <div class="col-12 col-md-5 ">
+                        <div class=" hidden-mobile visible-bigtablets">
+                            {% include _components/_select.html %}
+                        </div>
+
+                        <div class="visible-mobile hidden-bigtablets">
+                            {% include _components/_btn.html btn-class="btn-outline-primary btn-block" btn-title="Filtrar" %}
+                        </div>
+
                     </div>
                 </div>
-                {% include _components/_btn.html btn-class='btn btn-secondary btn-sm' btn-title='Indoor x' %}
-                {% include _components/_btn.html btn-class='btn btn-secondary btn-sm' btn-title='Running x' %}
+                {% include _components/_label-filter.html btn-class='btn btn-secondary btn-sm' btn-title='Indoor x' %}
+                {% include _components/_label-filter.html btn-class='btn btn-secondary btn-sm' btn-title='Running x' %}
 
 
                 <div class="row list-products">

@@ -2328,7 +2328,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   list-style: none; }
   .navbar-nav .nav-link {
     padding-right: 0;
@@ -5292,6 +5292,63 @@ blockquote {
 .filter-size {
   text-align: center; }
 
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative; }
+  .custom-select select {
+    display: none;
+    /*hide original SELECT element:*/ }
+
+.select-selected {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2px; }
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid #ced4da;
+    border-color: #ced4da transparent transparent transparent; }
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #ced4da transparent;
+    top: 10px; }
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #6c757d;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: .5em; }
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  border-top: 0; }
+  .select-items div:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none; }
+
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.select-group {
+  margin: 1rem 0; }
+
 /*CLASES PADDINGS*/
 .padding-xxs {
   padding: 0em; }
@@ -5722,10 +5779,8 @@ pre {
 .product-item h5 {
   margin-bottom: 0; }
 
-.title-product-bar {
-  margin-bottom: 1.5rem; }
-  .title-product-bar .title {
-    margin: 0; }
+.title-product-bar .title {
+  margin: 0.5em 0; }
 
 .pagination {
   margin: 1em 0; }
