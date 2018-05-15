@@ -1,14 +1,9 @@
-<div class="pagination {{ include.pagination-class }}">
-
-{% include _components/_btn.html  btn-class="btn-outline-secondary" btn-title="<" %}
-{% include _components/_btn.html  btn-class="btn-link" btn-title="1" %}
-{% include _components/_btn.html  btn-class="btn-primary" btn-title="2" %}
-{% include _components/_btn.html  btn-class="btn-link" btn-title="3" %}
-{% include _components/_btn.html  btn-class="btn-link" btn-title="4" %}
-...
-{% include _components/_btn.html  btn-class="btn-link" btn-title="10" %}
-{% include _components/_btn.html  btn-class="btn-outline-secondary" btn-title=">" %}
-
-
-</div>
-
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>

@@ -8,9 +8,7 @@ body{
   transform-style: preserve-3d;
 }
 
-.btn, .form, .form-inline, .form-check-group{
-  margin-bottom: 1em;
-}
+
 
 .form-check{
   margin-bottom: 1em;
@@ -27,26 +25,13 @@ body{
   }
 
 }
-ol ol, ul ul, ol ul, ul ol {
-  margin: .5em 0;
-}
+
 
 html{
   @media #{$big-screen}{
       font-size:110%;
   }
 
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  @media #{$desktop}{
-
-    .element &{
-      margin-top: 1em;
-    }
-  }
 }
 
 p{

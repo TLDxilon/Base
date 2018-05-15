@@ -1,6 +1,6 @@
 @import "../bootstrap/scss/bootstrap-reboot.scss";
 @import "../bootstrap/scss/bootstrap-grid.scss";
-@import "../bootstrap/scss/bootstrap.scss";
+@import "../bootstrap/scss/bootstrap";
 
 
 @import "_variables/_colors";
@@ -29,6 +29,8 @@
 @import "_helpers/_container-size.scss";
 @import "_helpers/_vertical-align.scss";
 
+
+
 @import "_guide/_grid.scss";
 
 @import "_elements/_element.scss";
@@ -37,7 +39,7 @@
 @import "_elements/_media.scss";
 @import "_elements/_product.scss";
 @import "_elements/_pagination.scss";
-
+@import "_elements/_filters.scss";
 
 @import "_elements/_list-menu.scss";
 @import "_fix/_mobile-fix-size.scss";

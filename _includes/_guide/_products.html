@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <div class="filters-group">
+            <div class="filters visible-desktop">
                 <div class="filters-group">
                 {% include _components/_h5.html title="Todas las categorías" %}
                 <ul class="list-unstyled">
@@ -87,13 +87,13 @@
             </div>
 
         </div>
-        <div class="col-9">
+        <div class="col-xs-12 col-sm-12 col-md-9">
             {% include _components/_breadcrumb.html %}
             <div class="row align-items-center">
                 <div class="col-7">
                     {% include _components/_h1.html title="Sneakers (9)" %}
                 </div>
-                <div class="col-5">
+                <div class="col-5 col-md-5">
                     {% include _components/_select.html %}
                 </div>
             </div>
@@ -103,39 +103,32 @@
 
             <div class="row list-products">
 
-                {% for item in page.products %}
 
-                <div class="col-4">
-                    {% include _elements/_product.html %}
-                </div>
-                {% endfor %}
-
-
-                 <div class="col-4">
+                 <div class="col-6 col-sm-6 col-md-4">
                      {% include _elements/_product.html title ='Nike overkee' img ='img/products/s1.jpg' picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-primary btn-block" btn-title="Ver más" badge-class="badge-danger" badge-title="Oferta" marca="Nike" %}
                  </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html  title="Converse all star blancas"   img ='img/products/s2.jpg'  picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-secondary disabled btn-block" btn-title="Ver más" badge-class="badge-primary" badge-title="Agotado"  marca="Converse" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html  title="Converse all star negras"  img ='img/products/s3.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Converse" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html  title="Adidas Gazelle"  img ='img/products/s4.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html  title="Nike pink casual"  img ='img/products/s5.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Nike" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html title="Adidas Stan Smith"  img ='img/products/s6.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s7.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s8.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     {% include _elements/_product.html title="Adidas tubular"   img ='img/products/s1.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas"%}
                 </div>
 
