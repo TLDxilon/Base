@@ -7,36 +7,27 @@ body{
   -webkit-text-size-adjust: 100%;
   transform-style: preserve-3d;
 }
-
-
-
-.form-check{
-  margin-bottom: 1em;
-  .form-check-group &{
-    margin-bottom: 0;
+html{
+  @media #{$big-screen}{
+    font-size:110%;
   }
+
 }
+
+
+
 .btn{
   .form-inline &{
     margin: 0;
   }
-  @media #{$big-screen}{
-    padding: $input-btn-padding-y-big-screen $input-btn-padding-x-big-screen;
+}
+
+.form-check{
+  .form-check-group &{
+    margin-bottom: 0;
   }
-
 }
 
-
-html{
-  @media #{$big-screen}{
-      font-size:110%;
-  }
-
-}
-
-p{
-  margin-bottom: 1em;
-}
 
 .block{
   position:relative;
@@ -48,31 +39,9 @@ p{
   }
 }
 
-form{
-  margin-bottom: 1em;
-}
 
 
 
-ul{
-  list-style-type: none;
-  padding-left: 1.5rem;
-}
-
-
-
-.lead{
-  line-height: 1.2;
-  margin-bottom: 1em;
-}
-
-
-figure {
-  margin: 1em 0;
-}
-blockquote {
-  margin: 1em 0;
-}
 
 .form-control{
   margin-bottom: 1em;

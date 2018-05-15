@@ -1,4 +1,8 @@
 .filter-color{
-  min-width: 2rem;
-  min-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  @media #{$big-screen}{
+    width: 2rem * 1.1;
+    height: 2rem * 1.1;
+  }
 }

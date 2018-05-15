@@ -98,7 +98,7 @@ hr {
 // stylelint-disable selector-list-comma-newline-after
 h1, h2, h3, h4, h5, h6 {
   margin-top: $spacer-em;
-  margin-bottom: $spacer-em;
+  margin-bottom: $spacer-em-05;
 }
 // stylelint-enable selector-list-comma-newline-after
 
@@ -144,6 +144,8 @@ ul ul,
 ol ul,
 ul ol {
 //  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 1.5rem;
 }
 
 dt {
@@ -156,7 +158,7 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 1em 0;
 }
 
 dfn {
@@ -261,7 +263,7 @@ pre {
 
 figure {
   // Apply a consistent margin strategy (matches our type styles).
-  margin: 0 0 1rem;
+  margin: 1em 0;
 }
 
 
@@ -479,4 +481,9 @@ template {
 // Needed for proper display in IE 10-.
 [hidden] {
   display: none !important;
+}
+
+
+form{
+  margin-bottom: $spacer-em;
 }
