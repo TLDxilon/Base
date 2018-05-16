@@ -38,15 +38,14 @@
        <a href="#">{% include _components/_h5.html  %}</a>
         <a href="#"><span>{{ include.marca }}</span></a>
         <p><small>Eluptatem quia voluptas sit aspmagni dolores eos.</small></p>
+
         <div class="d-flex justify-content-between">
-            <span>54.95€</span>
-            <span><del>74.95€</del></span>
-
-            {% include _components/_badge.html %}
-
+           <div class="price-item d-flex  flex-wrap">
+               <span>54.95€</span>
+               <span class="ml-lg-3"><del>74.95€</del></span>
+           </div>
+           <div class="product-badge align-self-end">{% include _components/_badge.html %}</div>
         </div>
-
-
 
         {% include _components/_btn.html %}
     </div>

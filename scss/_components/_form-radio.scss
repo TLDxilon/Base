@@ -1,0 +1,74 @@
+
+
+.form-radio{
+  margin-bottom: $type-margin-bottom;
+  .form-radio-group &{
+    margin-bottom: 0.5em;
+  }
+}
+
+
+
+/* Customize the label (the form-radio) */
+.form-radio {
+  display: block;
+  position: relative;
+  padding-left: $spacer * 2;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &:hover input ~ .checkmark {
+    background-color: $gray-200;
+
+  }
+
+
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: $primary;
+  }
+
+
+  /* Show the checkmark when checked */
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Create a custom radio */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $spacer * 1.5;
+    width: $spacer * 1.5;
+    background-color: $gray-100;
+    border-radius: 50%;
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      //top: 8px;
+      //left: 8px;
+      width: $spacer * 0.5;
+      height: $spacer * 0.5;
+      border-radius: 50%;
+      background: white;
+    }
+
+  }
+
+
+
+}
+

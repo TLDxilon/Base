@@ -23,15 +23,15 @@ $black:    #000 !default;
 
 $grays: () !default;
 $grays: map-merge((
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
 ), $grays);
 
 $blue:    #007bff !default;
@@ -47,19 +47,19 @@ $cyan:    #17a2b8 !default;
 
 $colors: () !default;
 $colors: map-merge((
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "cyan":       $cyan,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
 ), $colors);
 
 $primary:       $blue !default;
@@ -73,14 +73,14 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
 ), $theme-colors);
 // stylelint-enable
 
@@ -90,6 +90,7 @@ $theme-color-interval:      8% !default;
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 150 !default;
 
+// Customize the light and dark text colors for use in our YIQ color contrast function.
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark: $gray-900 !default;
 $yiq-text-light: $white !default;
@@ -115,29 +116,27 @@ $enable-print-styles:       true !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 
-$spacer-em: 1em !default;
-$spacer-em-075: 0.75em !default;
-$spacer-em-05: 0.5em !default;
+
 
 // stylelint-disable
 $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge((
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3)
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3)
 ), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
 $sizes: map-merge((
-  25: 25%,
-  50: 50%,
-  75: 75%,
-  100: 100%
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%
 ), $sizes);
 // stylelint-enable
 
@@ -161,7 +160,7 @@ $link-hover-decoration:     underline !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   1em !default;
 
 
 // Grid breakpoints
@@ -170,11 +169,11 @@ $paragraph-margin-bottom:   1rem !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -186,10 +185,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -238,7 +237,7 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-sm:                ($font-size-base * .95) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -254,6 +253,8 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
+$type-margin-top:             1em !default;
+$type-margin-bottom:          0.5em !default;
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
@@ -285,7 +286,7 @@ $blockquote-font-size:        ($font-size-base * 1.25) !default;
 $hr-border-color:             rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;
 
-$mark-padding:                .2em !default;
+$mark-padding:                .2rem !default;
 
 $dt-font-weight:              $font-weight-bold !default;
 
@@ -331,19 +332,27 @@ $table-dark-color:            $body-bg !default;
 $input-btn-padding-y:         .4375rem !default;
 $input-btn-padding-x:         .9375rem !default;
 
+$input-btn-padding-y-em:         .4375em;
+$input-btn-padding-x-em:         .9375em;
+
 
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow:  none !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
+
+
+
 $input-btn-line-height-sm:    $line-height-sm !default;
 
 $input-btn-padding-y-lg:      .5rem !default;
 $input-btn-padding-x-lg:      1rem !default;
+
+
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;
@@ -436,7 +445,7 @@ $input-transition:                      border-color .15s ease-in-out, box-shado
 $form-text-margin-top:                  .25rem !default;
 
 $form-check-input-gutter:               1.25rem !default;
-$form-check-input-margin-y:             .3rem !default;
+$form-check-input-margin-y:             0 !default;
 $form-check-input-margin-x:             .25rem !default;
 
 $form-check-inline-margin-x:            .75rem !default;
@@ -522,7 +531,7 @@ $custom-file-box-shadow:            $input-box-shadow !default;
 $custom-file-button-color:          $custom-file-color !default;
 $custom-file-button-bg:             $input-group-addon-bg !default;
 $custom-file-text: (
-  en: "Browse"
+        en: "Browse"
 ) !default;
 
 
@@ -551,8 +560,8 @@ $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
 $dropdown-link-hover-bg:            $gray-100 !default;
 
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-color:        $gray-900 !default;
+$dropdown-link-active-bg:           $white !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
@@ -845,8 +854,8 @@ $breadcrumb-padding-y:              .0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding:           .5rem !default;
 
-$breadcrumb-margin-bottom:          1rem !default;
-$breadcrumb-margin-top:             1rem !default;
+$breadcrumb-margin-bottom:          1em !default;
+$breadcrumb-margin-top:             1em !default;
 
 $breadcrumb-bg:                     $white !default;
 $breadcrumb-divider-color:          $gray-600 !default;

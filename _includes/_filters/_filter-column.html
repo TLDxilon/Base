@@ -1,0 +1,94 @@
+<div class="col-3 filter-position-{{ page.products.filters }}">
+    <div class="filters visible-bigtablets pt-3">
+        <div class="filters-group filter-categories">
+           <strong>{% include _components/_span.html text="Todas las categorías" %}</strong>
+            <hr>
+            <ul class="list-unstyled">
+                <li><a href="#">Chaquetas</a></li>
+                <li><a href="#">Abrigos</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Camisas</a></li>
+                <li>Zapatos  <i class="fas fa-angle-down"></i>
+
+
+
+                    <ul>
+                        <li><a href="#">Botas</a></li>
+                        <li>Sneakers</li>
+                    </ul>
+                </li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Bolsos</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+
+
+
+
+        {% if page.products.filter-position == 'left' %}
+
+        <div class="filters-group">
+           <strong>{% include _components/_span.html text="Tipo" %}</strong>
+            <hr>
+            <div class="form-check-group">
+                {% include _components/_check.html class=""  text="Running"  %}
+                {% include _components/_check.html class=""  text="Indoor"  %}
+                {% include _components/_check.html class=""  text="Casual"  %}
+            </div>
+        </div>
+        <div class="filters-group">
+            <strong>{% include _components/_span.html text="Marcas" %}</strong>
+            <hr>
+            {% include _components/_input.html class="" placeholder="Buscar" %}
+            <div class="form-check-group">
+                {% include _components/_check.html class=""  text="Nike"  %}
+                {% include _components/_check.html class=""  text="Adidas"  %}
+                {% include _components/_check.html class=""  text="Converse"  %}
+            </div>
+        </div>
+
+
+        {% include _filters/_range-slider.html  %}
+
+        <div class="filters-group">
+            <strong>{% include _components/_span.html text="Descuento" %}</strong>
+            <hr>
+            <div class="form-check-group">
+                {% include _components/_radio.html class="" text="30%"  %}
+                {% include _components/_radio.html class="" text="20%"  %}
+
+            </div>
+        </div>
+        <div class="filters-group">
+            <strong>{% include _components/_span.html text="Talla" %}</strong>
+            <hr>
+            <div class="form-check-group">
+                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XS' %}
+                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='S' %}
+                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='M' %}
+                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='L' %}
+                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XL' %}
+
+
+            </div>
+        </div>
+        <div class="filters-group">
+            <strong>{% include _components/_span.html text="Color" %}</strong>
+            <hr>
+            <div class="form-check-group">
+                {% include _components/_btn.html btn-class='btn-secondary btn-sm filter-color' btn-title='' %}
+                {% include _components/_btn.html btn-class='btn-danger btn-sm filter-color' btn-title='' %}
+                {% include _components/_btn.html btn-class='btn-primary btn-sm filter-color' btn-title='' %}
+                {% include _components/_btn.html btn-class='btn-light btn-sm filter-color' btn-title='' %}
+                {% include _components/_btn.html btn-class='btn-warning btn-sm filter-color' btn-title='' %}
+
+
+            </div>
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>

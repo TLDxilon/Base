@@ -21,3 +21,12 @@
       margin: 0.5em 0;
    }
 }
+.product-badge{
+   min-width: 4rem;
+   text-align: right;
+   .badge{
+      @media #{$desktop}{
+      font-size: 85%;
+    }
+   }
+}

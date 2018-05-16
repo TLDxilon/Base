@@ -7,7 +7,7 @@
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 0.5rem; /* Specified height */
+  height: 0.25rem; /* Specified height */
   background: $gray-500; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -27,7 +27,7 @@
 
   &::-moz-range-thumb {
     width: 1rem; /* Set a specific slider handle width */
-    height: 1rem; /* Slider handle height */
+    height: 0.5rem; /* Slider handle height */
     background: $primary; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }

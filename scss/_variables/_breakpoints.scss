@@ -1,6 +1,6 @@
 /*Breakpoints*/
 $mobile:"only screen and (min-width: 0)";
-$tablet:"only screen and (min-width: 480px)";
-$big-tablet:"only screen and (min-width: 720px)";
-$desktop:"only screen and (min-width: 960px)";
-$big-screen:"only screen and (min-width: 1440px)";
+$tablet:"only screen and (min-width: 36rem)"; //576px
+$big-tablet:"only screen and (min-width: 48rem)"; //768px
+$desktop:"only screen and (min-width: 62rem)"; //992px
+$big-screen:"only screen and (min-width: 90rem)"; //1440px

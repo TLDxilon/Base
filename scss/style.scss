@@ -1,14 +1,22 @@
-@import "../bootstrap/scss/bootstrap-reboot.scss";
-@import "../bootstrap/scss/bootstrap-grid.scss";
+//@import "../bootstrap/scss/bootstrap-reboot.scss";
+//@import "../bootstrap/scss/bootstrap-grid.scss";
 @import "../bootstrap/scss/bootstrap";
 
+
+@import "_base/_reboot.scss";
 
 @import "_variables/_colors";
 @import "_variables/_breakpoints";
 
+
 @import "_base/_base.scss";
+@import "_base/_type.scss";
+
 @import "_mixins/_mixins";
 
+@import "_components/_btn.scss";
+@import "_components/_input.scss";
+@import "_components/_breadcrumb.scss";
 @import "_components/_img.scss";
 @import "_components/_map.scss";
 @import "_components/_video.scss";
@@ -18,6 +26,9 @@
 @import "_components/_btn-filter-size.scss";
 @import "_components/_select.scss";
 @import "_components/_label-filter.scss";
+@import "_components/_form-check.scss";
+@import "_components/_form-radio.scss";
+
 
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";

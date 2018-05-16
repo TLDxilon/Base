@@ -1,14 +1,36 @@
 .filters{
   display: none;
   .title{
-    margin-bottom: ($spacer-em / 2);
+    margin-bottom: ($type-margin-bottom / 2);
     &:first-child{
       margin-top: 0;
     }
   }
 }
-
+.filter-horizontal{
+  display: none;
+}
 
 .filters-group{
-  margin-bottom: 3rem;
+  margin-bottom: 2em;
+}
+
+.filters-group-horizontal{
+  width:32%;
+  .btn-filter-horizontal{
+    margin: 0;
+     width: 100%;
+  }
+  .filter-dropdown{
+    width: 100%;
+  }
+  .form-check-group{
+    margin-bottom: 0.5rem;
+  }
+  .dropdown-item{
+    &:hover{
+      background: none;
+    }
+  }
+
 }

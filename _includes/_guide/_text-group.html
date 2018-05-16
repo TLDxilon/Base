@@ -14,7 +14,7 @@
 
            <form class="form-inline">
 
-               <div class="form-group mr-sm-3 mb-2">
+               <div class="form-group mr-sm-3">
                    <label class=" mr-sm-3">E-mail</label>
                    <input type="password" class="form-control" id="inputPassword3" placeholder="email@email.com">
                </div>
@@ -125,9 +125,20 @@
 
             </div>
 
+
            <div>
-               {% include _components/_btn.html btn-class="btn-outline-primary" btn-title="Primary"  %}
-               {% include _components/_btn.html btn-class="btn-outline-secondary" btn-title="Secondary"  %}
+               {% include _components/_btn.html btn-class="btn-outline-primary btn-sm" btn-title="Primary small"  %}
+               {% include _components/_btn.html btn-class="btn-outline-secondary btn-sm" btn-title="Secondary small"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html btn-class="btn-outline-primary" btn-title="Primary default"  %}
+               {% include _components/_btn.html btn-class="btn-outline-secondary" btn-title="Secondary default"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html btn-class="btn-primary btn-lg" btn-title="Primary large"  %}
+               {% include _components/_btn.html btn-class="btn btn-outline-primary btn-lg" btn-title="Secondary large"  %}
 
            </div>
            <div style="max-width:400px">
@@ -140,11 +151,7 @@
                {% include _components/_btn.html btn-class="btn-outline-primary  disabled" btn-title="Secondary disable"  %}
 
            </div>
-           <div>
-               {% include _components/_btn.html btn-class="btn-primary btn-lg" btn-title="Primary large"  %}
-               {% include _components/_btn.html btn-class="btn btn-outline-primary btn-lg" btn-title="Secondary large"  %}
 
-           </div>
            <hr>
            {% include _components/_h5.html title="Bootstrap heading" %}
            <div class="form-check-group">

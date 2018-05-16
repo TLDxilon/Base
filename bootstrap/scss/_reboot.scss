@@ -97,8 +97,8 @@ hr {
 // margin for easier control within type scales as it avoids margin collapsing.
 // stylelint-disable selector-list-comma-newline-after
 h1, h2, h3, h4, h5, h6 {
-  margin-top: $spacer-em;
-  margin-bottom: $spacer-em-05;
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
 }
 // stylelint-enable selector-list-comma-newline-after
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 // bottom margin to use `rem` units instead of `em`.
 p {
   margin-top: 0;
-  margin-bottom: $spacer-em;
+  margin-bottom: $paragraph-margin-bottom;
 }
 
 // Abbreviations
@@ -135,17 +135,15 @@ address {
 ol,
 ul,
 dl {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-//  margin-bottom: 0;
-  list-style-type: none;
-  padding-left: 1.5rem;
+  margin-bottom: 0;
 }
 
 dt {
@@ -158,7 +156,7 @@ dd {
 }
 
 blockquote {
-  margin: 1em 0;
+  margin: 0 0 1rem;
 }
 
 dfn {
@@ -263,7 +261,7 @@ pre {
 
 figure {
   // Apply a consistent margin strategy (matches our type styles).
-  margin: 1em 0;
+  margin: 0 0 1rem;
 }
 
 
@@ -481,9 +479,4 @@ template {
 // Needed for proper display in IE 10-.
 [hidden] {
   display: none !important;
-}
-
-
-form{
-  margin-bottom: $spacer-em;
 }

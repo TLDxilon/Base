@@ -1,5 +1,5 @@
 /*the container must be positioned relative:*/
-.custom-select {
+.my-select {
   position: relative;
   select{
     display: none; /*hide original SELECT element:*/
@@ -9,7 +9,7 @@
 
 .select-selected {
   background-color: $white;
-  border: 1px solid $gray-400;
+  border: 1px solid $gray-600;
   background-color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 2px;
@@ -20,12 +20,12 @@
     right: 10px;
     width: 0;
     height: 0;
-    border: 6px solid $gray-400;
-    border-color: $gray-400 transparent transparent transparent;
+    border: 6px solid $gray-600;
+    border-color: $gray-600 transparent transparent transparent;
   }
   &.select-arrow-active{
     &:after {
-      border-color: transparent transparent $gray-400 transparent;
+      border-color: transparent transparent $gray-600 transparent;
       top: 10px;
     }
   }
@@ -36,8 +36,8 @@
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
   color: $gray-600;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
   padding-left: .5em;
 
 

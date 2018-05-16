@@ -7,27 +7,25 @@ body{
   -webkit-text-size-adjust: 100%;
   transform-style: preserve-3d;
 }
-html{
-  @media #{$big-screen}{
-    font-size:110%;
-  }
 
-}
 
 
 
 .btn{
+  margin: $type-margin-bottom 0;
   .form-inline &{
     margin: 0;
   }
+
 }
 
-.form-check{
-  .form-check-group &{
-    margin-bottom: 0;
+
+html{
+  @media #{$big-screen}{
+      font-size:110%;
   }
-}
 
+}
 
 .block{
   position:relative;
@@ -39,9 +37,31 @@ html{
   }
 }
 
+form{
+  margin-bottom: $type-margin-bottom;
+}
 
 
 
+ul{
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+
+
+.lead{
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+
+figure {
+  margin: 1em 0;
+}
+blockquote {
+  margin: 1em 0;
+}
 
 .form-control{
   margin-bottom: 1em;
