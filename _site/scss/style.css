@@ -5645,6 +5645,20 @@ h1, h2, h3, h4, h5, h6,
 
 /* @include transition(all 2s ease-out); */
 /* @include transition-delay(0.2s); */
+.btn-square {
+  text-align: center;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0; }
+  @media only screen and (min-width: 90rem) {
+    .btn-square {
+      width: 2.2rem;
+      height: 2.2rem; } }
+
+.btn-outline-secondary {
+  color: #6c757d; }
+
 .breadcrumb {
   margin-top: 1em; }
 
@@ -5743,24 +5757,6 @@ h1, h2, h3, h4, h5, h6,
     cursor: pointer;
     /* Cursor on hover */ }
 
-.filter-color {
-  width: 2rem;
-  height: 2rem; }
-  @media only screen and (min-width: 90rem) {
-    .filter-color {
-      width: 2.2rem;
-      height: 2.2rem; } }
-
-.filter-size {
-  text-align: center;
-  padding: 0;
-  width: 2rem;
-  height: 2rem; }
-  @media only screen and (min-width: 90rem) {
-    .filter-size {
-      width: 2.2rem;
-      height: 2.2rem; } }
-
 /*the container must be positioned relative:*/
 .my-select {
   position: relative; }
@@ -5856,7 +5852,7 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0;
     cursor: pointer; }
   .form-check:hover input ~ .checkmark {
-    background-color: #e9ecef; }
+    background-color: #dee2e6; }
   .form-check input:checked ~ .checkmark {
     background-color: #007bff; }
   .form-check input:checked ~ .checkmark:after {
@@ -5867,7 +5863,7 @@ h1, h2, h3, h4, h5, h6,
     left: 0;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #e9ecef;
+    background-color: #dee2e6;
     border-radius: 2px;
     /* Create the checkmark/indicator (hidden when not checked) */ }
     .form-check .checkmark:after {
@@ -5927,8 +5923,8 @@ h1, h2, h3, h4, h5, h6,
       content: "";
       position: absolute;
       display: none;
-      width: 0.5rem;
-      height: 0.5rem;
+      width: 0.75rem;
+      height: 0.75rem;
       border-radius: 50%;
       background: #007bff; }
 
@@ -6457,6 +6453,8 @@ pre {
   margin: 1rem 0; }
 .single-product .select-width {
   width: 70%; }
+.single-product .input-group {
+  width: auto; }
 
 .list-menu .title {
   margin: 0; }

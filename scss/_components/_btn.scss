@@ -1,0 +1,17 @@
+.btn-square{
+  text-align: center;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0;
+  @media #{$big-screen}{
+    width: 2rem * 1.1;
+    height: 2rem * 1.1;
+  }
+
+}
+
+.btn-outline-secondary{
+  color: $gray-600;
+}
+
