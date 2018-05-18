@@ -1,0 +1,96 @@
+<section>
+<div class="container">
+    <div class="row">
+        {% if page.products.filters == 'yes' %}
+         {% include _filters/_filter-column.html  %}
+        {% endif %}
+
+        <div class="col-xs-12 col-sm-12 col-md-{% if page.products.filters == 'yes' %}9{% else' %}12{% endif %}">
+
+            <div class="filtered-products">
+                {% include _components/_breadcrumb.html %}
+                <div class="row align-items-center title-product-bar">
+                    <div class="col-12 col-md-7">
+                        {% include _components/_h1.html title="Sneakers (103)" %}
+
+                    </div>
+                    <div class="col-12 col-md-5 ">
+                        <div class=" hidden-mobile visible-bigtablets">
+                            {% include _components/_select.html
+                            justify="justify-content-end"
+                            title-select="Filtrar"
+                            option0="Ordenar por:"
+                            option1="Precio ascendente"
+                            option2="Precio descendente"
+                            option3="Novedades"
+
+
+                            %}
+                        </div>
+
+                        <div class="visible-mobile hidden-bigtablets">
+                            {% include _components/_btn.html btn-class="btn-outline-primary btn-block" btn-title="Filtrar" %}
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        {% include _components/_span.html text="Mostrando 9 productos de 103" %}
+                    </div>
+                </div>
+                <hr>
+                {% if page.products.filter-position == 'top'  and page.products.filters == 'yes' %}
+
+                 {% include _filters/_filter-horizontal.html  %}
+
+                {% else %}
+
+                {% endif %}
+
+                {% include _components/_label-filter.html btn-class='btn btn-secondary btn-sm' label-filter-title='Indoor' %}
+                {% include _components/_label-filter.html btn-class='btn btn-secondary btn-sm' label-filter-title='Running ' %}
+
+
+                <div class="row list-products">
+
+
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html title ='Nike overkee' img ='img/products/s1.jpg' picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-primary btn-block" btn-title="Ver más" badge-class="badge-danger" badge-title="Oferta" marca="Nike" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html  title="Converse all star blan"   img ='img/products/s2.jpg'  picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-secondary disabled btn-block" btn-title="Ver más" badge-class="badge-info" badge-title="Agotado"  marca="Converse" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html  title="Converse all star negras"  img ='img/products/s3.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Converse" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html  title="Adidas Gazelle"  img ='img/products/s4.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html  title="Nike pink casual"  img ='img/products/s5.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Nike" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html title="Adidas Stan Smith"  img ='img/products/s6.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html title="Adidas tubular"   img ='img/products/s7.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html title="Adidas tubular"   img ='img/products/s8.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas" %}
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-{{ page.products.col }}">
+                        {% include _elements/_product-horizontal.html title="Adidas tubular"   img ='img/products/s1.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Adidas"%}
+                    </div>
+
+
+                </div>
+                {% include _elements/_pagination.html pagination-class="text-center" %}
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+{{ page.products.img1 }}

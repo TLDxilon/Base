@@ -55,10 +55,6 @@ ul{
   margin-bottom: 1em;
 }
 
-
-figure {
-  margin: 1em 0;
-}
 blockquote {
   margin: 1em 0;
 }
@@ -67,5 +63,19 @@ blockquote {
   margin-bottom: 1em;
   &:last-child{
     margin-bottom: 0;
+  }
+  .form-inline &{
+    margin: 0;
+  }
+}
+
+figure {
+  @media #{$desktop}{
+    &:first-child{
+      margin-top: 0;
+      .element &{
+        margin-top: $type-margin-top;
+      }
+    }
   }
 }

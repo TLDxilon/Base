@@ -2,6 +2,13 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: $type-margin-top;
   margin-bottom: $type-margin-bottom;
-
+  @media #{$desktop}{
+    &:first-child{
+      margin-top: 0;
+      .element &{
+        margin-top: $type-margin-top;
+      }
+    }
+  }
 
 }

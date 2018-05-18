@@ -16,7 +16,7 @@
 }
 
 .filters-group-horizontal{
-  width:32%;
+   margin-bottom: 1rem;
   .btn-filter-horizontal{
     margin: 0;
      width: 100%;
@@ -31,6 +31,17 @@
     &:hover{
       background: none;
     }
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
   }
 
+}
+
+
+.filter-vertical{
+  .form-check-group, .form-control{
+    margin: 1rem 0;
+  }
 }

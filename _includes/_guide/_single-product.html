@@ -1,0 +1,76 @@
+<section class="single-product">
+<div class="container">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+                    {% include _components/_breadcrumb.html %}
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            {% include _components/_figure.html img="img/products/single.jpg" picture-fit="3-4"    %}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            {% include _components/_h1.html title="Adidas Gazelle mint woman" %}
+            <div class="price-item d-flex flex-column">
+                <span class="ant-price"><del>74.95€</del></span>
+                <span class="actual-price"><strong>54.95€</strong></span>
+
+            </div>
+            {% include _components/_copy.html %}
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Elige una talla" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XS' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='S' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='M' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='L' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XL' %}
+
+
+                </div>
+            </div>
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Elige un color" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_btn.html btn-class='btn-secondary btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-danger btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-primary btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-light btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-warning btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-success btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-info btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-dark btn-sm filter-color' btn-title='' %}
+
+
+                </div>
+
+
+        </div>
+            <div class="filters-group">
+                {% include _components/_select.html
+                justify="justify-content-start"
+                title-select="Otras características"
+                option0="Personalizadas"
+                option1="Sin personalizar"
+                option2="Sin personalizar"
+                option3="Sin personalizar"
+
+
+
+                %}
+
+            </div>
+            <hr>
+            <form class="form-inline">
+                {% include _components/_input-number.html class="mr-3" %}
+                {% include _components/_btn.html btn-class="btn-primary" btn-title="Añadir a la cesta" %}
+
+            </form>
+    </div>
+
+</div>
+</section>
+
+

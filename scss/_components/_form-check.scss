@@ -52,6 +52,7 @@
     background-color: $gray-200;
     border-radius: 2px;
 
+
     /* Create the checkmark/indicator (hidden when not checked) */
     &:after {
       content: "";
@@ -66,9 +67,3 @@
 
   }
 }
-
-
-
-
-
-

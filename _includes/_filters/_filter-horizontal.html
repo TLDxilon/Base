@@ -1,8 +1,9 @@
 <div class="filter-horizontal visible-bigtablets">
-    <div class="d-flex justify-content-between mb-4">
-        {% include _filters/_range-slider-horizontal.html  %}
-        {% include _filters/_filter-check-horizontal.html  %}
-        {% include _filters/_size-horizontal.html  %}
+    <div class="row justify-content-between mb-4">
+        <div class="col-md-4">{% include _filters/_horizontal/_range-slider.html  %}</div>
+        <div class="col-md-4">{% include _filters/_horizontal/_filter-brand.html  %}</div>
+        <div class="col-md-4">{% include _filters/_horizontal/_size.html  %}</div>
+        <div class="col-md-4">{% include _filters/_horizontal/_color.html  %}</div>
 
     </div>
 </div>

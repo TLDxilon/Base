@@ -3,6 +3,7 @@
 }
 
 .product-item{
+   margin-bottom: 2rem;
    p{
       line-height: 1;
       margin-bottom: .5em;
@@ -13,12 +14,16 @@
    }
    h5{
       margin-bottom: 0;
+      margin-top: 0.5em !important;
    }
 }
 
 .title-product-bar{
    .title{
       margin: 0.5em 0;
+   }
+   .select-width{
+      width:70%;
    }
 }
 .product-badge{
@@ -28,5 +33,13 @@
       @media #{$desktop}{
       font-size: 85%;
     }
+   }
+}
+.product-item-horizontal{
+   .target-image{
+      padding: 0;
+   }
+   .title{
+      margin-top: 0;
    }
 }

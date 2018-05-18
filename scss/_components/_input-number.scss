@@ -1,0 +1,29 @@
+.plus-minus-input {
+  align-items: center;
+
+  .input-group-field {
+    width: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: $btn-padding-y $btn-padding-x;
+    &:focus{
+      outline: none;
+    }
+
+    &::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      appearance: none;
+    }
+  }
+
+  .input-group-button {
+    .hollow {
+      &:focus{
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+

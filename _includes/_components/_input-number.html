@@ -1,0 +1,15 @@
+<!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+<div class="input-group plus-minus-input {{ include.class }}">
+    <div class="input-group-button input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary  hollow" data-quantity="minus" data-field="quantity">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+    </div>
+    <input class="input-group-field form-control" name="quantity" value="0">
+    <div class="input-group-button input-group-append">
+        <button type="button" class="btn btn-outline-secondary hollow" data-quantity="plus" data-field="quantity">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+

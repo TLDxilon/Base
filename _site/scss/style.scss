@@ -28,7 +28,13 @@
 @import "_components/_label-filter.scss";
 @import "_components/_form-check.scss";
 @import "_components/_form-radio.scss";
+@import "_components/_dropdown.scss";
+@import "_components/_input-number.scss";
 
+
+
+@import "_filters/_filters.scss";
+@import "_filters/_filter-brand.scss";
 
 @import "_helpers/_padding.scss";
 @import "_helpers/_colors.scss";
@@ -52,7 +58,7 @@
 @import "_elements/_media.scss";
 @import "_elements/_product.scss";
 @import "_elements/_pagination.scss";
-@import "_elements/_filters.scss";
+@import "_elements/_single-product.scss";
 
 @import "_elements/_list-menu.scss";
 @import "_fix/_mobile-fix-size.scss";

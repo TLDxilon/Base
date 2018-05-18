@@ -35,7 +35,7 @@
 
   /* When the checkbox is checked, add a blue background */
   input:checked ~ .checkmark {
-    background-color: $primary;
+    background-color: $gray-200;
   }
 
 
@@ -52,6 +52,8 @@
     width: $spacer * 1.5;
     background-color: $gray-100;
     border-radius: 50%;
+    border: 1px solid;
+
 
     /* Create the checkmark/indicator (hidden when not checked) */
     &:after {
@@ -63,7 +65,7 @@
       width: $spacer * 0.5;
       height: $spacer * 0.5;
       border-radius: 50%;
-      background: white;
+      background: $primary;
     }
 
   }

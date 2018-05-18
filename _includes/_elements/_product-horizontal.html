@@ -1,0 +1,57 @@
+<div class="element product-item product-item-horizontal ">
+    <div class="row align-items-center">
+        <div class="col-6 target-image {{ include.type }} position-relative">
+            <div class="overlay-element">
+                <a class="overlay-link" href="#">
+                    <div class="overlay-body text-center">
+                        <div class="overlay-content d-flex flex-column justify-content-center align-items-center">
+
+
+                            {% include _components/_icon.html icon="plus-circle"  icon-size="2" %}
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="overlay-image">
+
+                        <figure class="figure-content">
+                            <div class="size {{ include.ratio }}">
+
+                            </div>
+
+                            <div class="picture-fit picture-fit--{{ include.picture-fit }} {{ include.frame }}">
+                                <img class="img-fluid  {{ include.class }}" src="{{ include.img }}">
+                            </div>
+                        </figure>
+
+
+
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+        <div class="col-6 target-body">
+            <a href="#">{% include _components/_h5.html  %}</a>
+            <a href="#"><span>{{ include.marca }}</span></a>
+            <p><small>Eluptatem quia voluptas sit aspmagni dolores eos.</small></p>
+
+            <div class="d-flex justify-content-between">
+                <div class="price-item d-flex  flex-wrap">
+                    <span>54.95€</span>
+                    <span class="ml-lg-3"><del>74.95€</del></span>
+                </div>
+                <div class="product-badge align-self-end">{% include _components/_badge.html %}</div>
+            </div>
+
+            {% include _components/_btn.html %}
+        </div>
+
+
+    </div>
+
+</div>

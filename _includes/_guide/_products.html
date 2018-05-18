@@ -11,17 +11,30 @@
                 {% include _components/_breadcrumb.html %}
                 <div class="row align-items-center title-product-bar">
                     <div class="col-12 col-md-7">
-                        {% include _components/_h1.html title="Sneakers (9)" %}
+                        {% include _components/_h1.html title="Sneakers (103)" %}
+
                     </div>
                     <div class="col-12 col-md-5 ">
                         <div class=" hidden-mobile visible-bigtablets">
-                            {% include _components/_select.html justify="justify-content-end" %}
+                            {% include _components/_select.html
+                            justify="justify-content-end"
+                            title-select="Filtrar"
+                            option0="Ordenar por:"
+                            option1="Precio ascendente"
+                            option2="Precio descendente"
+                            option3="Novedades"
+
+
+                            %}
                         </div>
 
                         <div class="visible-mobile hidden-bigtablets">
                             {% include _components/_btn.html btn-class="btn-outline-primary btn-block" btn-title="Filtrar" %}
                         </div>
 
+                    </div>
+                    <div class="col-12">
+                        {% include _components/_span.html text="Mostrando 9 productos de 103" %}
                     </div>
                 </div>
                 <hr>
@@ -44,7 +57,7 @@
                         {% include _elements/_product.html title ='Nike overkee' img ='img/products/s1.jpg' picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-primary btn-block" btn-title="Ver más" badge-class="badge-danger" badge-title="Oferta" marca="Nike" %}
                     </div>
                     <div class="col-6 col-sm-6 col-md-{{ page.products.col }}">
-                        {% include _elements/_product.html  title="Converse all star blan"   img ='img/products/s2.jpg'  picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-secondary disabled btn-block" btn-title="Ver más" badge-class="badge-primary" badge-title="Agotado"  marca="Converse" %}
+                        {% include _elements/_product.html  title="Converse all star blan"   img ='img/products/s2.jpg'  picture-fit="cover" ratio="img-ratio--1-1"  btn-class="btn-secondary disabled btn-block" btn-title="Ver más" badge-class="badge-info" badge-title="Agotado"  marca="Converse" %}
                     </div>
                     <div class="col-6 col-sm-6 col-md-{{ page.products.col }}">
                         {% include _elements/_product.html  title="Converse all star negras"  img ='img/products/s3.jpg'  picture-fit="cover" ratio="img-ratio--1-1" btn-class="btn-primary btn-block" btn-title="Ver más"  marca="Converse" %}

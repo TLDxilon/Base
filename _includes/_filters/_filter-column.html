@@ -1,4 +1,4 @@
-<div class="col-3 filter-position-{{ page.products.filters }}">
+<div class="col-3">
     <div class="filters visible-bigtablets pt-3">
         <div class="filters-group filter-categories">
            <strong>{% include _components/_span.html text="Todas las categorías" %}</strong>
@@ -27,65 +27,62 @@
 
 
         {% if page.products.filter-position == 'left' %}
+        <div class="filter-vertical">
 
-        <div class="filters-group">
-           <strong>{% include _components/_span.html text="Tipo" %}</strong>
-            <hr>
-            <div class="form-check-group">
-                {% include _components/_check.html class=""  text="Running"  %}
-                {% include _components/_check.html class=""  text="Indoor"  %}
-                {% include _components/_check.html class=""  text="Casual"  %}
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Tipo" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_check.html class=""  text="Running"  %}
+                    {% include _components/_check.html class=""  text="Indoor"  %}
+                    {% include _components/_check.html class=""  text="Casual"  %}
+                </div>
+            </div>
+            {% include _filters/_vertical/_filter-brand.html  %}
+
+
+            {% include _filters/_vertical/_range-slider.html  %}
+
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Descuento" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_radio.html class="" text="30%"  %}
+                    {% include _components/_radio.html class="" text="20%"  %}
+
+                </div>
+            </div>
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Talla" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XS' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='S' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='M' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='L' %}
+                    {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XL' %}
+
+
+                </div>
+            </div>
+            <div class="filters-group">
+                <strong>{% include _components/_span.html text="Color" %}</strong>
+                <hr>
+                <div class="form-check-group">
+                    {% include _components/_btn.html btn-class='btn-secondary btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-danger btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-primary btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-light btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-warning btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-success btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-info btn-sm filter-color' btn-title='' %}
+                    {% include _components/_btn.html btn-class='btn-dark btn-sm filter-color' btn-title='' %}
+
+
+                </div>
             </div>
         </div>
-        <div class="filters-group">
-            <strong>{% include _components/_span.html text="Marcas" %}</strong>
-            <hr>
-            {% include _components/_input.html class="" placeholder="Buscar" %}
-            <div class="form-check-group">
-                {% include _components/_check.html class=""  text="Nike"  %}
-                {% include _components/_check.html class=""  text="Adidas"  %}
-                {% include _components/_check.html class=""  text="Converse"  %}
-            </div>
-        </div>
 
-
-        {% include _filters/_range-slider.html  %}
-
-        <div class="filters-group">
-            <strong>{% include _components/_span.html text="Descuento" %}</strong>
-            <hr>
-            <div class="form-check-group">
-                {% include _components/_radio.html class="" text="30%"  %}
-                {% include _components/_radio.html class="" text="20%"  %}
-
-            </div>
-        </div>
-        <div class="filters-group">
-            <strong>{% include _components/_span.html text="Talla" %}</strong>
-            <hr>
-            <div class="form-check-group">
-                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XS' %}
-                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='S' %}
-                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='M' %}
-                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='L' %}
-                {% include _components/_btn.html btn-class='btn-sm filter-size alert-dark' btn-title='XL' %}
-
-
-            </div>
-        </div>
-        <div class="filters-group">
-            <strong>{% include _components/_span.html text="Color" %}</strong>
-            <hr>
-            <div class="form-check-group">
-                {% include _components/_btn.html btn-class='btn-secondary btn-sm filter-color' btn-title='' %}
-                {% include _components/_btn.html btn-class='btn-danger btn-sm filter-color' btn-title='' %}
-                {% include _components/_btn.html btn-class='btn-primary btn-sm filter-color' btn-title='' %}
-                {% include _components/_btn.html btn-class='btn-light btn-sm filter-color' btn-title='' %}
-                {% include _components/_btn.html btn-class='btn-warning btn-sm filter-color' btn-title='' %}
-
-
-            </div>
-        </div>
 
         {% endif %}
 
