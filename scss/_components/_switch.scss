@@ -21,8 +21,8 @@
       position: relative;
       margin: 0 0.5em;
       top: 4px;
-      width: 2rem;
-      height: 1.25rem;
+      width: $spacer * 2;
+      height: $spacer * 1.25;
       background: $white;
       border-radius: 1rem;
       transition: .3s;
@@ -32,8 +32,8 @@
         content: '';
         display: block;
         position: absolute;
-        width: .75rem;
-        height: .75rem;
+        width: $spacer * 0.75;
+        height: $spacer * 0.75;
         border-radius: 50%;
         transition: .3s;
         top: 2px;

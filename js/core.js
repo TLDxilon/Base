@@ -19,6 +19,6 @@ $(document).ready(function($) {
         $(this).parents('.dropdown-menu').css('display', 'none');
     });
 
-
+    $("#ex2").slider({}); //range slider
 
 });

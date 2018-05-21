@@ -5603,6 +5603,8 @@ body {
 ul {
   list-style-type: none;
   padding-left: 1.5rem; }
+  ul ul {
+    margin: 0.5rem 0; }
 
 .lead {
   line-height: 1.2;
@@ -5674,6 +5676,7 @@ h1, h2, h3, h4, h5, h6,
     height: auto; }
 
 .map {
+  margin: 1rem 0;
   position: relative; }
   .block-cover .map {
     position: initial; }
@@ -5727,7 +5730,7 @@ h1, h2, h3, h4, h5, h6,
   /* Grey background */
   outline: none;
   /* Remove outline */
-  opacity: 0.7;
+  opacity: 1;
   /* Set transparency (for mouse-over effects on hover) */
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ }
   .slider:hover {
@@ -5747,7 +5750,7 @@ h1, h2, h3, h4, h5, h6,
     cursor: pointer;
     /* Cursor on hover */ }
   .slider::-moz-range-thumb {
-    width: 1rem;
+    width: 0.5rem;
     /* Set a specific slider handle width */
     height: 0.5rem;
     /* Slider handle height */
@@ -5858,7 +5861,7 @@ h1, h2, h3, h4, h5, h6,
     display: block; }
   .form-check .checkmark {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     height: 1.25rem;
     width: 1.25rem;
@@ -5910,7 +5913,7 @@ h1, h2, h3, h4, h5, h6,
     display: block; }
   .form-radio .checkmark {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     height: 1.25rem;
     width: 1.25rem;
@@ -5983,8 +5986,8 @@ h1, h2, h3, h4, h5, h6,
         content: '';
         display: block;
         position: absolute;
-        width: .75rem;
-        height: .75rem;
+        width: 0.75rem;
+        height: 0.75rem;
         border-radius: 50%;
         transition: .3s;
         top: 2px;
@@ -6025,6 +6028,11 @@ h1, h2, h3, h4, h5, h6,
 .filter-brand .form-check-group {
   max-height: 10rem;
   overflow: scroll; }
+
+.filter-categories li {
+  margin-bottom: 0.25rem; }
+.filter-categories ul ul {
+  margin: .5rem 0; }
 
 /*CLASES PADDINGS*/
 .padding-xxs {
