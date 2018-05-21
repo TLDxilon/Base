@@ -12,7 +12,7 @@
 .form-check {
   display: block;
   position: relative;
-  padding-left: $spacer * 2;
+  padding-left: 2rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -32,23 +32,33 @@
   }
 
 
-  /* When the checkbox is checked, add a blue background */
-   input:checked ~ .checkmark {
+  /* When the checkbox is disabled */
+   input:disabled ~ .checkmark {
     background-color: $primary;
+     opacity: 0.5;
+     &:after {
+       display: none;
+     }
+  }
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: $primary;
+    /* Show the checkmark when checked */
+    &:after {
+      display: block;
+    }
   }
 
 
-  /* Show the checkmark when checked */
-   input:checked ~ .checkmark:after {
-    display: block;
-  }
+
+
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
     top: 2px;
     left: 0;
-    height: $spacer * 1.25;
-    width: $spacer * 1.25;
+    height: 20px;
+    width: 20px;
     background-color: $gray-300;
     border-radius: 2px;
 

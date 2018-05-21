@@ -5846,8 +5846,8 @@ h1, h2, h3, h4, h5, h6,
   user-select: none;
   /* Hide the browser's default checkbox */
   /* On mouse-over, add a grey background color */
+  /* When the checkbox is disabled */
   /* When the checkbox is checked, add a blue background */
-  /* Show the checkmark when checked */
   /* Create a custom checkbox */ }
   .form-check input {
     position: absolute;
@@ -5855,16 +5855,22 @@ h1, h2, h3, h4, h5, h6,
     cursor: pointer; }
   .form-check:hover input ~ .checkmark {
     background-color: #dee2e6; }
+  .form-check input:disabled ~ .checkmark {
+    background-color: #007bff;
+    opacity: 0.5; }
+    .form-check input:disabled ~ .checkmark:after {
+      display: none; }
   .form-check input:checked ~ .checkmark {
-    background-color: #007bff; }
-  .form-check input:checked ~ .checkmark:after {
-    display: block; }
+    background-color: #007bff;
+    /* Show the checkmark when checked */ }
+    .form-check input:checked ~ .checkmark:after {
+      display: block; }
   .form-check .checkmark {
     position: absolute;
     top: 2px;
     left: 0;
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 20px;
+    width: 20px;
     background-color: #dee2e6;
     border-radius: 2px;
     /* Create the checkmark/indicator (hidden when not checked) */ }
@@ -5899,6 +5905,7 @@ h1, h2, h3, h4, h5, h6,
   /* Hide the browser's default checkbox */
   /* On mouse-over, add a grey background color */
   /* When the checkbox is checked, add a blue background */
+  /* When the checkbox is disabled */
   /* Show the checkmark when checked */
   /* Create a custom radio */ }
   .form-radio input {
@@ -5909,14 +5916,19 @@ h1, h2, h3, h4, h5, h6,
     background-color: #e9ecef; }
   .form-radio input:checked ~ .checkmark {
     background-color: #e9ecef; }
+  .form-radio input:disabled ~ .checkmark {
+    background-color: #e9ecef;
+    opacity: 0.5; }
+    .form-radio input:disabled ~ .checkmark:after {
+      display: none; }
   .form-radio input:checked ~ .checkmark:after {
     display: block; }
   .form-radio .checkmark {
     position: absolute;
     top: 2px;
     left: 0;
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 20px;
+    width: 20px;
     background-color: #e9ecef;
     border-radius: 50%;
     border: 2px solid #007bff;
@@ -5925,8 +5937,8 @@ h1, h2, h3, h4, h5, h6,
       content: "";
       position: absolute;
       display: none;
-      width: 0.75rem;
-      height: 0.75rem;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       background: #007bff; }
 

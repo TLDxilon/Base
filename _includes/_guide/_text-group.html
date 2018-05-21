@@ -156,16 +156,19 @@
            {% include _components/_h5.html title="Bootstrap heading" %}
            <div class="form-check-group">
 
-               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
-               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
-               {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  status="checked" %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out" %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out" status="unchecked disabled"  %}
+               {% include _components/_check.html class="" type="checkbox" text="Check me out" status="checked disabled"  %}
 
            </div>
 
            {% include _components/_h5.html title="Bootstrap heading" %}
            <div class="form-check-group">
-               {% include _components/_radio.html class="" text="Default radio"  %}
+               {% include _components/_radio.html class="" text="Default radio"  status="checked"%}
                {% include _components/_radio.html class="" text="Second default radio"  %}
+               {% include _components/_radio.html class="" text="Second default radio"  status="unchecked disabled" %}
+               {% include _components/_radio.html class="" text="Second default radio"  status="checked disabled" %}
 
            </div>
            {% include _components/_switch.html %}
