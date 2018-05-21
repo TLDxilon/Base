@@ -1,9 +1,9 @@
 
 
-
-           <h3>{% include _components/_badge.html badge-class="badge-primary" badge-title="Agotado" %}</h3>
-           <h4>{% include _components/_badge.html badge-class="badge-danger" badge-title="Oferta" %}</h4>
-           <h5>{% include _components/_badge.html badge-class="badge-success" badge-title="Disponible" %}</h5>
+<h1>Example heading {% include _components/_badge.html badge-class="badge-secondary" badge-title="New" %}</h1>
+<h3>Example heading {% include _components/_badge.html badge-class="badge-secondary" badge-title="New" %}</h3>
+<h4>Example heading {% include _components/_badge.html badge-class="badge-secondary" badge-title="New" %}</h4>
+           {% include _components/_copy.html %}
 
 
 
@@ -89,9 +89,12 @@
 
            width="width-30"
            %}
+           <div style="max-width:300px">
+               {% include _components/_range-slider.html  %}
+               {% include _elements/_pagination.html  %}
+           </div>
 
-           {% include _components/_range-slider.html  %}
-           {% include _elements/_pagination.html  %}
+
 
            <hr>
            <form class="form-inline">
