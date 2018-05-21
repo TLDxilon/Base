@@ -5972,7 +5972,8 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none; }
 
 .custom-control {
-  margin: 1em 0; }
+  margin: 1em 0;
+  display: inline-block; }
   .custom-control.border-switch {
     color: #007bff;
     padding-left: 0; }
@@ -5986,7 +5987,7 @@ h1, h2, h3, h4, h5, h6,
     .custom-control.border-switch .border-switch-control-indicator {
       display: inline-block;
       position: relative;
-      margin: 0 0.5em;
+      margin: 0 0.25em;
       top: 4px;
       width: 2rem;
       height: 1.25rem;
