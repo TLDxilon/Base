@@ -161,20 +161,27 @@
                {% include _components/_check.html class="" type="checkbox" text="Check me out"  %}
 
            </div>
+
            {% include _components/_h5.html title="Bootstrap heading" %}
            <div class="form-check-group">
-               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
-               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
-               {% include _components/_check.html class="form-check-inline" type="checkbox" text="Check me out"  %}
+               {% include _components/_radio.html class="" text="Default radio"  %}
+               {% include _components/_radio.html class="" text="Second default radio"  %}
 
            </div>
-           {% include _components/_h5.html title="Bootstrap heading" %}
-           <div class="form-check-group">
-               {% include _components/_check.html class="" type="radio" text="Default radio"  %}
-               {% include _components/_check.html class="" type="radio" text="Second default radio"  %}
+           {% include _components/_switch.html %}
+           {% include _components/_switch.html %}
 
-           </div>
-           {% include _components/_select.html  %}
+
+           {% include _components/_select.html
+           justify="justify-content-start"
+           title-select="Filtrar"
+           option0="Ordenar por:"
+           option1="Precio ascendente"
+           option2="Precio descendente"
+           option3="Novedades"
+
+
+           %}
 
            {% include _components/_range-slider.html  %}
            {% include _elements/_pagination.html  %}
@@ -185,6 +192,7 @@
                {% include _components/_btn.html btn-class="btn-primary" btn-title="Añadir a la cesta" %}
 
            </form>
+
 
         <div style="height: 200px">
 

@@ -5600,9 +5600,6 @@ body {
   .block.block-cover {
     padding: 0; }
 
-form {
-  margin-bottom: 0.5em; }
-
 ul {
   list-style-type: none;
   padding-left: 1.5rem; }
@@ -5658,6 +5655,8 @@ h1, h2, h3, h4, h5, h6,
 
 .btn-outline-secondary {
   color: #6c757d; }
+  .btn-outline-secondary:hover {
+    color: #fff; }
 
 .breadcrumb {
   margin-top: 1em; }
@@ -5861,8 +5860,8 @@ h1, h2, h3, h4, h5, h6,
     position: absolute;
     top: 0;
     left: 0;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
     background-color: #dee2e6;
     border-radius: 2px;
     /* Create the checkmark/indicator (hidden when not checked) */ }
@@ -5913,11 +5912,11 @@ h1, h2, h3, h4, h5, h6,
     position: absolute;
     top: 0;
     left: 0;
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: #f8f9fa;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #e9ecef;
     border-radius: 50%;
-    border: 1px solid;
+    border: 2px solid #007bff;
     /* Create the checkmark/indicator (hidden when not checked) */ }
     .form-radio .checkmark:after {
       content: "";
@@ -5940,6 +5939,7 @@ h1, h2, h3, h4, h5, h6,
   white-space: normal; }
 
 .plus-minus-input {
+  margin: 1em 0;
   align-items: center; }
   .plus-minus-input .input-group-field {
     width: 4rem;
@@ -5955,6 +5955,41 @@ h1, h2, h3, h4, h5, h6,
   .plus-minus-input .input-group-button .hollow:focus {
     outline: none;
     box-shadow: none; }
+
+.custom-control {
+  margin: 1em 0; }
+  .custom-control.border-switch {
+    color: #007bff;
+    padding-left: 0; }
+    .custom-control.border-switch .border-switch-control-input {
+      display: none; }
+      .custom-control.border-switch .border-switch-control-input:checked ~ .border-switch-control-indicator {
+        border-color: #007bff; }
+        .custom-control.border-switch .border-switch-control-input:checked ~ .border-switch-control-indicator::after {
+          left: 14px;
+          background-color: #007bff; }
+    .custom-control.border-switch .border-switch-control-indicator {
+      display: inline-block;
+      position: relative;
+      margin: 0 0.5em;
+      top: 4px;
+      width: 2rem;
+      height: 1.25rem;
+      background: #fff;
+      border-radius: 1rem;
+      transition: .3s;
+      border: 2px solid #adb5bd; }
+      .custom-control.border-switch .border-switch-control-indicator::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: .75rem;
+        height: .75rem;
+        border-radius: 50%;
+        transition: .3s;
+        top: 2px;
+        left: 2px;
+        background: #adb5bd; }
 
 .filters {
   display: none; }

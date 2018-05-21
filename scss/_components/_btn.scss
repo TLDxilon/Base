@@ -13,5 +13,8 @@
 
 .btn-outline-secondary{
   color: $gray-600;
+  &:hover{
+    color: $white;
+  }
 }
 

@@ -48,11 +48,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: $spacer * 1.5;
-    width: $spacer * 1.5;
-    background-color: $gray-100;
+    height: $spacer * 1.25;
+    width: $spacer * 1.25;
+    background-color: $gray-200;
     border-radius: 50%;
-    border: 1px solid;
+    border: 2px solid $primary;
 
 
     /* Create the checkmark/indicator (hidden when not checked) */

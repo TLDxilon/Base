@@ -1,0 +1,48 @@
+.custom-control{
+    margin: 1em 0;
+
+  &.border-switch{
+    color: $primary;
+    padding-left: 0;
+
+    .border-switch-control-input{
+      display: none;
+      &:checked~.border-switch-control-indicator{
+        border-color: $primary;
+
+        &::after{
+          left: 14px;
+          background-color: $primary;
+        }
+      }
+    }
+    .border-switch-control-indicator{
+      display: inline-block;
+      position: relative;
+      margin: 0 0.5em;
+      top: 4px;
+      width: 2rem;
+      height: 1.25rem;
+      background: $white;
+      border-radius: 1rem;
+      transition: .3s;
+      border: 2px solid $gray-500;
+
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: .75rem;
+        height: .75rem;
+        border-radius: 50%;
+        transition: .3s;
+        top: 2px;
+        left: 2px;
+        background: $gray-500;
+      }
+    }
+  }
+
+
+}
+
