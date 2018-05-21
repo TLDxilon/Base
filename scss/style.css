@@ -5975,7 +5975,6 @@ h1, h2, h3, h4, h5, h6,
   margin: 1em 0;
   display: inline-block; }
   .custom-control.border-switch {
-    color: #007bff;
     padding-left: 0; }
     .custom-control.border-switch .border-switch-control-input {
       display: none; }
@@ -6035,7 +6034,7 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none;
     outline: none; }
 
-.filter-vertical .form-check-group, .filter-vertical .form-control {
+.filter-vertical .form-check-group, .filter-vertical .form-control, .filter-vertical .input-group-button {
   margin: 1rem 0; }
 
 .filter-brand .form-check-group {
@@ -6377,6 +6376,15 @@ position-relative {
   display: table-cell;
   vertical-align: bottom; }
 
+.width-70 {
+  width: 70%; }
+
+.width-50 {
+  width: 50%; }
+
+.width-30 {
+  width: 30%; }
+
 .section {
   padding: 20px 0; }
 
@@ -6483,8 +6491,6 @@ pre {
 
 .title-product-bar .title {
   margin: 0.5em 0; }
-.title-product-bar .select-width {
-  width: 70%; }
 
 .product-badge {
   min-width: 4rem;

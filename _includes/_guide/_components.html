@@ -1,0 +1,106 @@
+
+
+
+           <h3>{% include _components/_badge.html badge-class="badge-primary" badge-title="Agotado" %}</h3>
+           <h4>{% include _components/_badge.html badge-class="badge-danger" badge-title="Oferta" %}</h4>
+           <h5>{% include _components/_badge.html badge-class="badge-success" badge-title="Disponible" %}</h5>
+
+
+
+           {% include _components/_badge.html badge-class="badge-primary" badge-title="Agotado" %}
+           {% include _components/_badge.html badge-class="badge-danger" badge-title="Oferta" %}
+           {% include _components/_badge.html badge-class="badge-success" badge-title="Disponible" %}
+
+
+           <nav aria-label="breadcrumb">
+
+               <ol class="breadcrumb">
+                   <li class="breadcrumb-item"><a href="#">Home</a></li>
+                   <li class="breadcrumb-item"><a href="#">Library</a></li>
+                   <li class="breadcrumb-item active" aria-current="page">Data</li>
+               </ol>
+           </nav>
+            <div>
+                {% include _components/_btn.html btn-class="btn-primary" btn-title="Primary"  %}
+                {% include _components/_btn.html btn-class="btn-link" btn-title="Link"  %}
+                {% include _components/_btn.html btn-class="btn-light" btn-title="Light"  %}
+
+            </div>
+
+
+           <div>
+               {% include _components/_btn.html btn-class="btn-outline-primary btn-sm" btn-title="Primary small"  %}
+               {% include _components/_btn.html btn-class="btn-outline-secondary btn-sm" btn-title="Secondary small"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html btn-class="btn-outline-primary" btn-title="Primary default"  %}
+               {% include _components/_btn.html btn-class="btn-outline-secondary" btn-title="Secondary default"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html btn-class="btn-primary btn-lg" btn-title="Primary large"  %}
+               {% include _components/_btn.html btn-class="btn btn-outline-primary btn-lg" btn-title="Secondary large"  %}
+
+           </div>
+           <div style="max-width:400px">
+               {% include _components/_btn.html btn-class="btn-primary  btn-block" btn-title="Block"  %}
+           </div>
+           <div style="max-width:400px">
+               {% include _components/_btn.html btn-class="btn-outline-primary  btn-block" btn-title="Block"  %}
+
+           </div>
+           <div>
+               {% include _components/_btn.html btn-class="btn-primary  disabled" btn-title="Primary disable"  %}
+               {% include _components/_btn.html btn-class="btn-outline-primary  disabled" btn-title="Secondary disable"  %}
+
+           </div>
+
+           <hr>
+           {% include _components/_h5.html title="Bootstrap heading" %}
+           <div class="form-check-group">
+
+               {% include _components/_check.html class="" type="checkbox" text="Check me out"  status="checked" %}
+               {% include _components/_check.html class="" type="checkbox" text="Unchecked" %}
+               {% include _components/_check.html class="" type="checkbox" text="Unchecked disabled" status="unchecked disabled"  %}
+               {% include _components/_check.html class="" type="checkbox" text="Checked disabled" status="checked disabled"  %}
+
+           </div>
+
+           {% include _components/_h5.html title="Bootstrap heading" %}
+           <div class="form-check-group">
+               {% include _components/_radio.html class="" text="Default radio"  status="checked"%}
+               {% include _components/_radio.html class="" text="Unchecked"  %}
+               {% include _components/_radio.html class="" text="Unchecked disabled"  status="unchecked disabled" %}
+               {% include _components/_radio.html class="" text="Checked disabled"  status="checked disabled" %}
+
+           </div>
+           {% include _components/_switch.html margin="mr-3" %}
+           {% include _components/_switch.html %}
+
+
+           {% include _components/_select.html
+           justify="justify-content-start"
+           title-select="Filtrar"
+           option0="Ordenar por:"
+           option1="Precio ascendente"
+           option2="Precio descendente"
+           option3="Novedades"
+
+           width="width-30"
+           %}
+
+           {% include _components/_range-slider.html  %}
+           {% include _elements/_pagination.html  %}
+
+           <hr>
+           <form class="form-inline">
+               {% include _components/_input-number.html class="mr-3" %}
+               {% include _components/_btn.html btn-class="btn-primary" btn-title="Añadir a la cesta" %}
+
+           </form>
+
+
+        <div style="height: 200px">
+
+        </div>
